@@ -13,7 +13,7 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="nav-container">
-                <NavLink exact to='/' className="nav-logo">
+                <NavLink exact to='/joywebproject' className="nav-logo">
                     JoyAgunbiade
                     
                 </NavLink>
@@ -22,7 +22,7 @@ function Navbar() {
                     
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
-                            <NavLink to="/"exact activeClassName="active" className="nav-links" onClick={handleClick}>Home</NavLink>
+                            <NavLink to="/joywebproject"exact activeClassName="active" className="nav-links" onClick={handleClick}>Home</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to="/about"activeClassName="active" className="nav-links" onClick={handleClick}>About</NavLink>

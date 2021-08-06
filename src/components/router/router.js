@@ -5,7 +5,7 @@ import Home from '../../pages/homepage/home';
 
 const Router = ()=>(
     <Switch>
-        <Route exact path = '/' component ={Home} />
+        <Route exact path = '/joywebproject' component ={Home} />
         <Route exact path = '/about' component={About} />
         {/* <Route exact path='/contact_us' component = {Contact} /> */}
     </Switch>

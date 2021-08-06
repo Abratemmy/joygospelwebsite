@@ -32,6 +32,9 @@
     font-size: 2rem;
     flex-grow: 1;
 }
+.nav-logo:hover{
+    color: #e9c25e;
+}
   
 .nav-menu {
     display: flex;
