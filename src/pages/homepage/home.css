@@ -1,0 +1,86 @@
+.homepage{
+    width: 100%;
+    padding: 30px 0px;
+}
+.homepage h1{
+    color: var(--blackColor);
+    font-family: var(--headingFamily);
+    font-size: 50px;
+}
+.home-video{
+    width: 100%;
+
+}
+.video{   
+   object-fit: contain;
+    position: relative;
+    z-index:-1;
+    
+}
+/* .home-img{
+    width: 100%;
+    height: 550px;
+}
+.home-img img{
+    height: 550px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+} */
+/* @media screen and (max-width: 960px){
+    .home-img img{
+        height: 400px;
+        width: 100%;
+    }
+} */
+.home-introduction {
+    background-color: rgb(247, 247, 177);
+}
+.home-container{
+    padding: 30px 0px;
+    max-width: 500px;
+}
+.home-title-cursive{
+    font-family: var(--indieFamily);
+    color: var(--blackColor);
+    font-size: 60px;
+    font-weight: 700;
+}
+.home-container p{
+    color: var(--blackColor);
+    line-height: 30px;
+    font-family: var(--textFamily);
+}
+
+/* about in homepage starts here */
+.home-about-image{
+    padding: 30px 0px;
+}
+.home-about-image img{
+    border-radius: 5px;
+    width: 80%;
+    height: 400px;
+}
+.home-about-text{
+    padding: 30px 0px;
+}
+.home-about-text h1{
+    font-family: var(--headingFamily);
+    color: var(--purpleColor);
+    font-size: 50px;
+}
+.home-about-text p{
+    color: var(--blackColor);
+    font-family: var(--textFamily);
+    font-size: 17px;
+    line-height: 30px;
+    
+}
+.home-about-text p span{
+    display: block;
+    color:var(--purpleColor);
+    font-family: var(--indieFamily);
+    font-size: 40px;
+    padding-top: 20px;
+}
