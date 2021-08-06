@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './home.css';
 import joygif from '../../images/JOYAGIF.gif'
 import aboutimage from '../../images/img3.jpg'
+import { NavLink } from 'react-router-dom';
 
 export class Home extends Component {
     render() {
@@ -9,7 +10,7 @@ export class Home extends Component {
             <div className="pages">
                 <div className="page-container">
                     <div className="homepage">
-                        <h1>It's time to <br /> Keep the light burning</h1>
+                        <h1>It's time to <br /> Keep the  <span>light burning</span></h1>
                     </div>
                 </div>
 
@@ -53,11 +54,24 @@ export class Home extends Component {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="button">
+                                    <NavLink to='/about' className="navlinks-btn">Learn More</NavLink>
+                                </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
-                    
+
+                {/* schedule for a meeting */}
+                <div className="home-schedule">
+                    <div className="page-container">
+                        <h1>Want to Schedule us for an Events?</h1>
+                        <div className="button">
+                            <NavLink to='/contact' className="navlinks-btn">Contact Us</NavLink>
+                        </div>
+                    </div>
+                </div>   
                     
             </div>
         )
