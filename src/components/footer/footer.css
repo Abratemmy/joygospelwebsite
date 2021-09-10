@@ -1,0 +1,84 @@
+.footerpage{
+    background: rgb(167, 167, 66);
+    padding: 50px 0px 20px 0px;
+}
+.footer-row{
+    padding: 10px 5px 0px 5px;
+}
+.footer-logo{
+    font-size: 35px;
+    font-family: var(--cursiveFamily);
+    color:var(--blackColor);
+    font-weight: 700;
+}
+.footer-button{
+    text-align: center;
+    margin: 30px 0px 10px 0px;
+}
+.footer-navlink{
+    color:#fff;
+    border: 2px solid var(--blackColor);
+    padding: 16px 25px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: var(--textFamily);
+    transition: 0.4s all ease;
+    border-radius: 5px;
+}
+.footer-navlink:hover{
+    color:rgb(223, 219, 219);
+}
+.privacy-policy{
+    color: var(--purpleColor);
+    text-align: center;
+    padding-top: 35px;
+    font-size: 30px;
+}
+.footer-privacy{
+    font-size: 20px;
+    font-family: var(--textFamily);
+    color: var(--blackColor);
+    text-decoration: none;
+    transition: 0.4s all ease;
+}
+.footer-privacy:hover{
+    color: var(--purpleColor);
+}
+.footer-social-title{
+    font-size: 25px;
+    font-family: var(--textFamily);
+    font-weight: 500;
+    color:var(--blackColor);
+    padding-bottom: 15px;
+    text-align: center;
+}
+.footer-social-media{
+    margin-left: 70px;
+}
+.footer-social-media ul{
+    display: flex;
+    list-style: none;
+    
+}
+.footer-social-media ul li{
+    color: var(--blackColor);
+    text-align: center;
+    padding: 8px;
+    background: var(--purpleColor);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-left: 5px;
+    transition:0.4s all ease
+}
+.footer-social-media ul li:hover  .social-icon{
+    color: #fff;
+    transform:scale(1.2)
+}
+.footer-social-media ul li .social-icon{
+    transition:0.4s all ease;
+    color: var(--blackColor);
+    font-size: 17px;
+    text-align: center;
+    
+}

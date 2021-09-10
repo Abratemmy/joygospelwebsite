@@ -1,0 +1,65 @@
+.newaboutpage{
+    padding: 30px 0
+}
+.newaboutpage .newabout-img img{
+    border-radius: 10px;
+    margin: 3px 30px 3px 0px;
+    width:400px;
+    height:400px; 
+    float:left;
+    transition: 0.4 all ease;
+    opacity: 1;
+}
+.newaboutpage .newabout-img img:hover{
+    opacity:0.8
+}
+.newabout-title{
+    font-family: var(--textFamily);
+    font-size: 50px;
+    font-weight: 700;
+    color:var(--purpleColor);
+}
+.newabout-text{
+    padding: 20px;
+    text-align: justify;
+    font-size: 17px;
+    font-family: var(--textFamily);
+    color:var(--blackColor);
+    line-height: 30px;
+}
+.newabout-text span{
+    color: var(--purpleColor);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* .aboutpage{
+    padding: 30px 0px ;
+}
+.aboutpage .about-title{
+    color: var(--purpleColor);
+    font-family: var(--textFamily);
+    padding-bottom: 25px;
+    font-size: 30px;
+}
+.about-image img{
+    width: 100%;
+    height:350px;
+    display: block;
+   
+}
+.about-content{
+    position: relative;
+}
+
+.aboutfamily{
+    position: relative;
+    top: -50px;
+}
+.aboutpage .about-text{
+    text-align: justify;
+    color: var(--blackColor);
+    font-size: 17px;
+    line-height: 30px;
+    font-family:  var(--textFamily);
+} */

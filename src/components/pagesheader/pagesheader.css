@@ -1,0 +1,14 @@
+.pagesheaderpage{
+    border-bottom: 1px solid var(--purpleColor);
+}
+.pagesheaderpage .otherpagestitle{
+    font-size: 50px;
+    color:var(--blackColor);
+    font-family: var(--textFamily);
+    padding: 20px 0px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.pagesheaderpage .otherpagestitle span{
+    color:var(--primaryColor);
+}

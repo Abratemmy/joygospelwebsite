@@ -1,0 +1,58 @@
+.contactpage{
+    overflow:hidden;
+}
+.contactpage .contact-text{
+    padding: 40px 0px;
+    text-align: justify;
+    font-size: 17px;
+    color:var(--blackColor);
+    font-family: var(--textFamily);
+    line-height: 30px;
+}
+.contactpage .contact-text p{
+    line-height: 30px;
+}
+.contactpage .contact-nav{
+    text-decoration: none;
+    font-size: 18px;
+    color:var(--primaryColor);
+    font-family: var(--textFamily);
+    transition: 0.4s all ease;
+    font-weight: bold;
+}
+.contactpage .contact-nav:hover{
+    color: var(--purpleColor);
+}
+
+.contact-form-container{
+    background: var(--backgroundColor);
+    text-align: center;
+    justify-content: center;
+    padding: 40px 0px;
+}
+.contact-form-container h4{
+    color:var(--blackColor);
+    font-size: var(--textFamily);
+    font-size: 40px;
+}
+.contact-form-container p{
+    color: var(--blackColor);
+    font-family: var(--textFamily);
+    font-size: 17px;
+    padding-bottom: 15px;
+}
+.contact-form-container .openModalbtn{
+    padding: 10px 20px;
+    background: transparent;
+    transition: 0.4s all ease;
+    border:2px solid var(--blackColor);
+    border-radius: 5px;
+    font-family: var(--textFamily);
+    font-size: 20px;
+    text-transform: capitalize;
+    color:var(--blackColor)
+}
+.contact-form-container .openModalbtn:hover{
+    background: var(--purpleColor);
+    color:#fff;
+}

@@ -1,0 +1,79 @@
+.speakingcontent{
+    padding: 30px 0px;
+}
+.speakingcontent .title{
+    font-family: var(--cursiveFamily);
+    font-size: 45px;
+    color:var(--blackColor);
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.speakingcontent .title span{
+    color:var(--purpleColor);
+}
+.speakingcontent p{
+    margin-left: 20vw;
+    max-width: 800px;
+    color:var(--blackColor);
+    font-size: 17px;
+}
+
+/* css for speaking form */
+.speaking-container{
+    margin:0 15vw;
+    font-family: var(--textFamily);
+    padding: 0px 0px 40px 0px;
+}
+.sendform{
+    font-size: 23px;
+    font-family: var(--textFamily);
+    color:var(--blackColor);
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.speaking-container .speaking-text{
+    font-size: 15px;
+    padding-bottom: 15px;
+    color: var(--blackColor);
+}
+/* form is here */
+.speaking-container .speaking-text span{
+    color:rgb(250, 34, 34);
+    font-size: 20px;
+}
+.speaking-container .speaking-form{
+    width: 100%;
+    padding: 5px 0px 20px 0px;
+}
+.speaking-container .speaking-form label{
+    display: block;
+    font-size: 18px;
+    color: var(--blackColor);
+}
+.speaking-container .speaking-form label span{
+    color: rgb(250, 34, 34);
+}
+.speaking-container .speaking-form .inputfield{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid var(--purpleColor);
+    transition: 0.4s all ease;
+}
+::placeholder{
+    color: #bdbdbd;
+}
+.speaking-container .speaking-form input:focus, .speaking-container .speaking-form textarea:focus,
+.speaking-container .speaking-form select:focus{
+    outline: none;
+    border: 1px solid var(--primaryColor);
+}
+.speaking-container .speaking-form .textareafield{
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid var(--purpleColor);
+    transition: 0.4s all ease;
+}
+

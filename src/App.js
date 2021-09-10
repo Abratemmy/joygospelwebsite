@@ -1,21 +1,22 @@
-import React from 'react'
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Router from './components/router/router';
+import React, {Component} from "react";
+import "./App.css";
+import Footer from "./components/footer/footer";
+import Navbar from "./components/Navbar/Navbar";
+import Router from "./components/router";
 
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <Router />
-      {/* <div className="text-center" style={{color:'red'}}>Hello joy</div>
-      <div className="row">
-        <div className="col-lg-6">hello</div>
-        <div className="col-lg-6">hii</div>
-      </div> */}
-    </div>
-  );
+class App extends Component{
+   
+    render(){
+        return(
+            <div>
+               <Navbar />
+                <Router />
+                <Footer />
+            </div>
+        )
+    }
+    
 }
 
 export default App;
