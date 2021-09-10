@@ -29,7 +29,7 @@ export class Blogitem extends Component {
         if(isLoaded){
             return (
                 <Fragment>
-                    <Link to="/jaweb">Go back</Link>
+                    <Link to="/joywebproject/jaweb">Go back</Link>
                     hello from blog
                     <h2>{blogs.title.rendered}</h2>
                     <p>{blogs.content.rendered}</p>
