@@ -10,7 +10,7 @@ import Speaking from '../pages/speaking/speaking';
 
 const Router = ()=>(
     <Switch>
-        <Route exact path ='/joywebproject/jaweb/' component ={Home} />
+        <Route exact path ='/joywebproject' component ={Home} />
         <Route exact path ='/jaweb/about' component={About} />
         <Route exact path='/jaweb/contact' component={Contact} />
         <Route exact path='/jaweb/blogs' component={Blog} />

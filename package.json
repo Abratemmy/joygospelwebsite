@@ -1,8 +1,8 @@
 {
-  "name": "jaweb",
+  "name": "joywebproject",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://abratemmy.github.io/jaweb",
+  "homepage": "https://abratemmy.github.io/joywebproject",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",

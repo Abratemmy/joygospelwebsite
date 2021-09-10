@@ -33,7 +33,7 @@ function Navbar() {
                     
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
-                            <NavLink to="/joywebproject/jaweb"exact activeClassName="active" className="nav-links" onClick={handleClick}>Home</NavLink>
+                            <NavLink to="/joywebproject/"exact activeClassName="active" className="nav-links" onClick={handleClick}>Home</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to="/jaweb/about"activeClassName="active" className="nav-links" onClick={handleClick}>About</NavLink>
