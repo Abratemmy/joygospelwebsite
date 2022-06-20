@@ -1,11 +1,11 @@
 .pagesheaderpage{
-    border-bottom: 1px solid var(--purpleColor);
+    background:var(--backgroundColor)
 }
 .pagesheaderpage .otherpagestitle{
     font-size: 50px;
-    color:var(--blackColor);
+    color:#fff;
     font-family: var(--textFamily);
-    padding: 20px 0px;
+    padding: 30px 0px;
     font-weight: 700;
     text-transform: capitalize;
 }

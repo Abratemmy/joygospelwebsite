@@ -6,7 +6,9 @@ export class Pagesheader extends Component {
         return (
             <div className="pagesheaderpage">
                 <div className="container">
-                    <div className="otherpagestitle">{this.props.title}</div>
+                    <div className="otherpagestitle wow slideInLeft"data-wow-duration="2s">
+                        {this.props.title}
+                    </div>
                 </div>
             </div>
         )

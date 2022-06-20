@@ -1,21 +1,30 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import "./App.css";
-import Footer from "./components/footer/footer";
-import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/newfooter/Footer";
+import Navbar from "./components/newNavbar/Navbar";
 import Router from "./components/router";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import WOW from 'wowjs';
+// import Topblog from "./pages/newblog/topblog";
+// import Youtube from "./pages/newblog/youtube";
 
 
-class App extends Component{
-   
-    render(){
+export class App extends Component{
+    componentDidMount(){
+        new WOW.WOW().init();
+    }
+   render(){
         return(
             <div>
-               <Navbar />
+                <Navbar />
                 <Router />
-                <Footer />
+                <Footer /> 
+                {/* <Youtube />
+                <Topblog /> */}
             </div>
         )
-    }
+   }
     
 }
 

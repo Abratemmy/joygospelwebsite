@@ -1,117 +1,98 @@
 import React, { Component } from 'react';
 import './about.css';
-// import funimage from '../../images/img2.jpg';
-// import familyimage from '../../images/img4.jpg';
-import Pagesheader from '../../components/pagesheader/pagesheader';
-import aboutimg from '../../images/img5.jpg'
+import Quote from '../../components/quote/quote';
+import {FaInstagram} from 'react-icons/fa';
+import {RiLinkedinFill} from 'react-icons/ri'
 
 export class About extends Component {
     render() {
         return (
             <div className="newaboutpage">
-                <Pagesheader title="Picture will be here" />
+                <div className="about-banner">
+                    <div className="container">
+                        <div className="about-speaking">
+                            <h1 className=" speaking-header" style={{paddingTop:"30px"}}>Building Values <br />With Passion</h1>
+                            <p style={{paddingTop:"35px"}}>I have a strong passion for people discovering their purpose and walking in it fully.</p>
+                           
+                        </div>
+                    </div>
+                </div>
                 <div className="container">
-                    <div className="newabout">
-                        <div className="newabout-img">
-                            <img src={aboutimg} alt="loading"  />
+                    <div className="row">
+                        <div className="col-lg-6 col-md-12 col-sm-12">
+                            <div className="about-container"> 
+                                <div className='newabout-img'>
+                                    <img src="https://res.cloudinary.com/hayteetech/image/upload/v1641461422/Joyagunbiade.com/img5_kf4ngo.jpg" alt="loading"  />
+                                </div>
+                            </div>
                         </div>
 
-                        <div className="newaboutgroup-text">
-                            <div className="newabout-title">Who I am</div>
-                            <div className="newabout-text">
-                                My name is Joy Agunbiade and I am first a child of God, before anything else. Wait a minute, hold that thought before any conclusions are made, I am here to serve you. A people lover both in my specific purpose 
-                                and my career path. A Human Resources professional by trade with a background in psychology from Unilag. 
-                            </div>
+                        <div className="col-lg-6 col-md-12 col-sm-12">
+                            <div className="about-container">
+                                <div className="newaboutgroup-text">
+                                    <div className="newabout-title">Passionate for God</div>
+                                    <div className="newabout-text wow slideInRight" data-wow-duration="2s" data-wow-delay=".2s">
+                                        My name is Joy Agunbiade and I am first a child of God, before anything else. Wait a minute, hold that thought before any conclusions are made, I am here to serve you. A people lover both in my specific purpose 
+                                        and my career path. A Human Resources professional by trade with a background in psychology from Unilag. 
+                                    </div>
 
-                            <div className="newabout-text">
-                                I have a strong passion for people discovering their purpose and walking in it fully. I believe life is much sweeter when you know what you’re called by God to be and you simply being that. I am the steward /co-founder of GWOP which is God’s Women of Purpose. 
-                                A place where women are equipped with the tools, resources and environment needed to discover and fulfil purpose.
-                            </div>
+                                    <div className="newabout-text wow slideInRight" data-wow-duration="2s" data-wow-delay=".4s">
+                                        I have a strong passion for people discovering their purpose and walking in it fully. I believe life is
+                                         much sweeter when you know what you’re called by God to be and you simply being that. I am the steward /co-founder of GWOP which is God’s Women of Purpose. 
+                                        A place where women are equipped with the tools, resources and environment needed to discover and fulfil purpose.
+                                    </div>
 
-                            <div className="newabout-text">
-                                When I’m not working I’ll be on some adventure solo trips, or supporting charity projects, hosting talk shows, podcasts and 
-                                evangelistic events. I am on a mission to transmit God’s message from His heart to yours by any means possible. 
-                            </div>
+                                    <div className="newabout-text wow slideInRight" data-wow-duration="2s" data-wow-delay=".6s">
+                                        When I’m not working I’ll be on some adventures like solo trips, or supporting charity projects, hosting talk shows, podcasts and 
+                                        evangelistic events. I am on a mission to transmit God’s message from His heart to yours by any means possible. 
+                                    </div>
 
-                            <div className="newabout-text">
-                                And the journey continues <span>. . .</span>
+                                    <div className="newabout-text newabout-continue" >
+                                        <em style={{fontWeight:"500"}}>A</em><span>nd the Journey Continues . . .</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <Quote />
+
+                <div className="about-session container" id="success">
+                    <div className="about-social ">Connect with <span>Me On</span></div>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-2 col-md-1 col-sm-12"></div>
+                            <div className="col-lg-4 col-md-5 col-sm-10">
+                                <div className="about-social-container wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">    
+                                    <div className='about-social-url'>
+                                        <a href="https://www.instagram.com/joy_ajay/" className="about-link" target="_blank"  rel="noopener noreferrer">
+                                            <div className="">
+                                                <FaInstagram className="icon" /> 
+                                            </div>
+                                            <div className='social-icon'>Instagram</div>
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-5 col-sm-10">
+                                <div className="about-social-container wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                                    <div className='about-social-url'>
+                                        <a href="https://ca.linkedin.com/in/joy-agunbiade-chrp-cdr-38740a123" className="about-link" target="_blank"  rel="noopener noreferrer">
+                                            <div className="">
+                                                <RiLinkedinFill className="icon" /> 
+                                            </div>
+                                            <div className='social-icon'>Linkedin</div>
+                                            </a>
+                                    </div>
+                                 
+                                </div>
+                            </div>
+                            <div className="col-lg-2 col-md-1 col-sm-12"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            // <div className="aboutpage">
-            //     <div className="container">
-            //         <div className="">
-            //             <div className="row">
-            //                 <div className="col-lg-7 col-md-12 col-sm-12">
-            //                     <div className="about-content">
-            //                         <div className="about-title">Fun</div>
-            //                         <div className="about-text">
-            //                             <p>The first thing you should know is that writing specifically to tell you 
-            //                                 about myself is hugely unnerving for me.  So here’s what I’d tell you if I had a minute-to-spin-it.
-            //                             </p>
-            //                             <p>I'm a . . .</p>
-            //                             <p>Jesus girl. Wife. Mom. Writer. Speaker. Singer. Homeschooler. Bibliovore. Techie. Hopeless
-            //                                  Romantic. Starbucks Junkie. Foodie. Fashion Newbie. Runner Wannabe. Sweet Tea Connoisseur.</p>
-            //                         </div>
-            //                     </div>
-            //                 </div>
-            //                 <div className="col-lg-4 col-md-12 col-sm-12">
-            //                     <div className="about-image">
-            //                         <img src={funimage} alt="loading" className="funimage" />
-            //                     </div>
-            //                 </div>
-            //             </div>
-
-            //             <div className="aboutfamily">
-            //                 <div className="row">
-            //                     <div className="col-lg-4 col-md-12 col-sm-12">
-            //                         <div className="about-image">
-            //                             <img src={familyimage} alt="loading" />
-            //                         </div>
-            //                     </div>
-            //                     <div className="col-lg-8 col-md-12 col-sm-12">
-            //                         <div className="about-content about-content2">
-            //                             <div className="about-title">Family</div>
-            //                                 <div className="about-text">
-            //                                     <p>The first thing you should know is that writing specifically to tell you 
-            //                                         about myself is hugely unnerving for me.  So here’s what I’d tell you if I had a minute-to-spin-it.
-            //                                     </p>
-            //                                     <p>I consider myself blessed to be the mother in an awesome family and also to be a daughter in an awesome family.  I am the first born of a man and woman who have shown me what it means to love Jesus, love their family, and work hard to establish a legacy.  I am the 
-            //                                         sister of siblings who value the legacy they’ve been handed and take their own callings and destinies seriously.</p>
-            //                                 </div>
-            //                             </div>
-            //                     </div>
-            //                 </div>
-            //             </div>
-
-
-            //             <div className="aboutfamily">
-            //                 <div className="row">
-                              
-            //                     <div className="col-lg-8 col-md-12 col-sm-12">
-            //                         <div className="about-content about-content2">
-            //                             <div className="about-title">Education</div>
-            //                                 <div className="about-text">
-            //                                     <p>The first thing you should know is that writing specifically to tell you 
-            //                                         about myself is hugely unnerving for me.  So here’s what I’d tell you if I had a minute-to-spin-it.
-            //                                     </p>
-            //                                     <p>I consider myself blessed to be the mother in an awesome family and also to be a daughter in an awesome family.  I am the first born of a man and woman who have shown me what it means to love Jesus, love their family, and work hard to establish a legacy.  I am the 
-            //                                         sister of siblings who value the legacy they’ve been handed and take their own callings and destinies seriously.</p>
-            //                                 </div>
-            //                             </div>
-            //                     </div>
-            //                     <div className="col-lg-4 col-md-12 col-sm-12">
-            //                         <div className="about-image">
-            //                             <img src={familyimage} alt="loading" />
-            //                         </div>
-            //                     </div>
-            //                 </div>
-            //             </div>
-            //         </div>
-            //     </div>
-            // </div>
+            
         )
     }
 }

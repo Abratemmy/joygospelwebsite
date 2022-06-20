@@ -1,54 +1,96 @@
 .homepage{
     width: 100%;
-    padding: 30px 0px;
-    z-index:999;
+    z-index:999; 
 }
 h1{
-    color: var(--blackColor);
-    font-family: var(--textFamily);
+    color: var(--blackColor)!important;
+    font-family: var(--textFamily)!important;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: bold!important;
 }
-h1 span{
+ h1 span{
     color: var(--purpleColor)
 }
+/* css for the homepage banner */
+.homepage-banner{
+    background:linear-gradient(to left, rgba(85, 84, 84, 0.459), rgba(0, 0, 0, 0.993)),url("../../images/jjoybg.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.homepage-banner .title{
+    position: relative;
+    padding-top: 12%;
+    font-size: 60px;
+    color:#fff;
+    font-weight: bold;
+    max-width: 650px;
+    line-height: 65px;
+}
+.homepage-banner p{
+    color: #fff;
+    font-family: var(--textFamily);
+    padding-top: 30px;
+    max-width: 650px;
+    font-size: 20px;
+    letter-spacing: .7px
+}
 
-/* css for home introduction */
 .home-introduction {
-    background-color: var(--backgroundColor);
+    background: var(--backgroundColor);
+    text-align: center;
 }
 .home-container{
     padding: 30px 0px;
-    max-width: 500px;
+    max-width: 700px;
+    margin: auto;
 }
-.home-title-cursive{
-    font-family: var(--cursiveFamily);
-    color: var(--blackColor);
-    font-size: 50px;
-    font-weight: 700;
+.home-container .home-img-hi{
+    font-size: 45px;
+    font-family: var(--textFamily);
+    color: var(--blackColor)!important;
+    font-weight: 600
 }
 .home-container p{
+    font-family: var(--textFamily);
+    font-size:18px;
     color: var(--blackColor);
     line-height: 30px;
-    font-family: var(--textFamily);
 }
 
+
 /* homeabout in homepage starts here */
+.home-about{
+    padding:40px 0px;
+}
 .home-about-image{
     padding: 30px 0px;
 }
 .home-about-image img{
     border-radius: 5px;
-    width: 90%;
-    height: 400px;
+    width: 100%;
+    opacity: 1;
+    transition: 0.4s all ease;
+    /* object-fit: cover */
+}
+.home-about-image img:hover{
+    opacity: 0.8;
+    transform: scale(1.02);
 }
 .home-about-text{
-    padding: 30px 0px;
+    margin: 30px 0px;
+    padding: 30px 15px;
+    background: var(--backgroundColor);
+    border-radius: 10px;
 }
 .home-about-text h1{
     font-family: var(--textFamily);
-    color: var(--purpleColor);
-    font-size: 50px;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 10px;
 }
 .home-about-text p{
     color: var(--blackColor);
@@ -58,7 +100,7 @@ h1 span{
     text-align: justify;
     
 }
-.home-about-text p span{
+.home-about-text  span{
     display: block;
     color:var(--purpleColor);
     font-family: var(--cursiveFamily);
@@ -67,17 +109,18 @@ h1 span{
 }
 .button{
     text-align: center;
+    margin-top: 20px;
 }
 .navlinks-btn{
-    color: var(--blackColor);
+    color: #fff;
     text-decoration: none;
     font-family: var(--textFamily);
-    font-size: 20px;
-    padding: 10px 25px;
-    border: 2px solid var(--primaryColor);
+    font-size: 18px;
+    padding: 15px 23px;
     border-radius: 5px;
     transition: 0.4s all ease;
-    background-color: transparent;
+    background-color: var(--primaryColor);
+    font-weight:600
 }
 .navlinks-btn:hover{
     background-color: var(--purpleColor);
@@ -87,19 +130,31 @@ h1 span{
 
 /* homeschedule css starts here */
 .home-schedule{
-    margin-top: 30px;
-    background-color:  var(--backgroundColor);
+    background-color:  var(--primaryColor);
     text-align: center;
-    padding:30px 0px;
+}
+.home-schedule-col{
+    padding: 30px 0px
 }
 .home-schedule h1{
     font-size:50px;
-    padding: 10px 0px 40px 0px;
+    padding: 10px 0px 30px 0px;
 }
-
+.schedule-btn, .schedule-btn1{
+    background: var(--purpleColor);
+    color:#fff;
+    border:none;
+}
+.schedule-btn:hover{
+    background: transparent;
+    border: 2px solid var(--purpleColor);
+}
+.schedule-btn1:hover{
+    color: var(--primaryColor)
+}
 /* css for home-card */
 .home-card{
-    padding: 30px 0px;
+    padding: 50px 0px 30px 0px;
 }
 .home-card-title{
     font-family: var(--cursiveFamily);
@@ -107,13 +162,7 @@ h1 span{
     font-size: 50px;
     letter-spacing: 3px;
     font-weight: 700;
-}
-.home-card-title span{
-    position: relative;
-    top:-30px;
-    color:var(--purpleColor);
-    letter-spacing: -1px;
-    font-size: 35px;
+    padding-bottom: 20px;
 }
 .card-text{
     color:var(--blackColor);
@@ -148,11 +197,28 @@ h1 span{
     margin:0 auto;
     position: relative;
     overflow:hidden;
-    background: transparent;
-    padding:10px 10px 0px 10px;
+    background: linear-gradient(180deg, rgba(214, 180, 236, 0.877), rgba(192, 153, 228, 0.582))!important;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
 }
-.card-img2{
-    height:350px;
+.home-card-icon{
+    color:rgb(194, 191, 191);
+    font-size: 30px;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    padding: 45px;
+    background: linear-gradient(180deg, rgba(232, 255, 102, 0.966), rgb(243, 210, 20));
+    opacity: 0.8;
+    position: relative;
+}
+.home-card-bg p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold
 }
 .card-style:hover .card-hover{
     top:0;
@@ -165,28 +231,36 @@ h1 span{
     top: calc(100% - 3px);
     left:0;
     width: 100%;
-    height: 360px;
+    height: 400px;
     background: linear-gradient(180deg, rgba(224, 211, 25, 0.877), rgba(220, 236, 73, 0.582));
     z-index:1;
     transition:0.5s
 }
 /* jesus text starts here */
+.jesustext-col{
+    padding: 40px 0px 30px 0px;
+}
+.icon-light{
+    color: var(--purpleColor)!important;
+    font-size: 22px
+}
 .jesustext{
-    padding: 20px 0px 10px 0px;
     color:var(--blackColor);
-    font-size: 25px;
+    font-size: 20px;
     font-family: var(--textFamily);
+    font-weight: 550;
 }
 /* css for home blog starts here */
 .home-blog-design{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
     grid-row-gap:2rem;
     grid-column-gap: 38px;
 }
 .home-blog{
-    padding: 30px 0px
+    padding: 50px 0px 30px 0px;
+    width: 100%;
 }
 .home-blog-heading{
     font-size: 50px;
@@ -195,28 +269,82 @@ h1 span{
     font-weight: 700;
     padding: 5px 0px 20px 0px;
 }
-.home-blog-heading span{
-    color: var(--purpleColor);
+
+.home-blog-card{
+    background: #fff;
+    padding: 25px;
+    transition: 0.4s all ease;
 }
-.home-blog-card img{
+.home-blog-img{
+    position: relative; 
+    height: 210px; 
+    width: 100%;
+    overflow: hidden;
+}
+.home-blog-img img{
+    position: absolute; 
+    /* right: 0; 
+    bottom: 0; */
+    left:0;
     border-radius: 10px;
-    height: 300px;
+    transition: 0.4s all ease;
+    width: 100%;
+    /* object-fit: contain; */
+}
+.home-blog-card:hover img{
+    transform: scale(1.03);
+}
+.home-blog-card img:hover{
+    opacity: 0.5;
+    image-orientation: flip;
 }
 .home-blog-content{
     display: flex;
+    padding-bottom: 15px;
 }
 .home-blog-content .title{
-    font-size: 20px;
+    font-size: 15px;
     color:var(--blackColor);
     font-weight: 700;
-    padding-top: 10px;
+    padding-top: 20px;
     font-family: var(--textFamily);
+    text-transform: uppercase;
 }
+/* .home-blog-content .blog-text-display{
+    display: flex;
+} */
 .home-blog-content .blog-text{
     color:var(--blackColor);
-    font-size: 17px;
+    font-size: 15px;
     font-family:var(--textFamily);
 }
 .blog-button{
-    text-align: right;
+    text-align: center;
+    padding-bottom: 30px;
+}
+@media screen and (max-width: 850px){
+    h1{
+        font-size: 30px!important;       
+    }
+    .home-img-hi{
+        font-size:30px;    
+    }
+    .home-about-image img{
+        height: 300px;
+    }
+    .home-card-title{
+        font-size: 40px;
+    }
+    .home-blog-heading{
+        font-size: 40px;
+    }
+    .home-about, .home-schedule, .home-card{
+        margin-top:50px;
+    }
+    .home-blog{
+        padding: 40px 0px
+    }
+    .home-blog-card img{
+        width: 85%;
+    }
 }

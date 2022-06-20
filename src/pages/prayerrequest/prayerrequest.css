@@ -1,0 +1,79 @@
+
+.prayer-container{
+    margin: 50px 0px;
+    box-shadow:#c4c4c4 1px 1px 5px 5px;
+    padding: 40px;
+    background:#fff;
+}
+.prayer p{
+    color: var(--blackColor);
+    line-height: 30px;
+    font-size: 18px;
+    font-family: var(--textFamily);
+    text-align: justify;
+}
+.prayer-bg{
+    background: rgb(240, 238, 238);
+    margin: 20px 0px 20px 0px;
+    padding: 20px;
+    text-align: justify;
+    line-height: 30px;
+    font-size:18px;
+    font-family: var(--textFamily);
+    color: var(--blackColor)
+}
+.prayer-bg span{
+    display: block;
+    padding-top: 20px;
+}
+
+.prayer-bg span a{
+    color: var(--primaryColor);
+    transition: 0.4s all ease;
+    font-weight: 600
+}
+.prayer-bg span a:hover{
+    color: var(--purpleColor)
+}
+.prayer-request-form h3{
+    color: var(--blackColor);
+    font-family: var(--textFamily);
+    padding: 20px 0px 20px 0px;
+}
+.prayer-request-form label{
+    display: block;
+    font-size: 18px;
+    color:var(--blackColor);
+    font-weight:600
+}
+.prayer-request-form label span{
+    color:red;
+    padding-left: 2px;
+}
+.prayer-request-form p{
+    color:red;
+    font-style: italic;
+    font-size: 14px;
+}
+.prayer-request-form .inputfield{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid var(--purpleColor);
+    transition: 0.4s all ease;
+    color:var(--blackColor);
+    font-size:18px;
+    font-family: var(--textFamily);
+}
+.prayer-request-form .inputfield:focus, .prayer-request-form .textarea:focus{
+    outline: none;
+    border: 1px solid var(--primaryColor);
+}
+.prayer-request-form .textarea{
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid var(--purpleColor);
+    transition: 0.4s all ease;
+}

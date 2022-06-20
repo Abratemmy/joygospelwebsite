@@ -1,0 +1,59 @@
+.Slider{
+    overflow: hidden;
+    width: 100%;
+}
+.background-image2{
+    background: linear-gradient(180deg, rgba(243, 60, 219, 0.342), rgba(12, 60, 61, 0.443)),url("https://res.cloudinary.com/hayteetech/image/upload/v1641460923/Joyagunbiade.com/img7_dmgilp.jpg");
+    background-position: center center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background-pictures{
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background-header{
+    color:#fff!important;
+    font-size: 47px!important;
+    font-weight: bold!important;
+}
+
+.homeslide-arrow{
+    position: absolute;
+    top: 220px;
+    /* transform:translate(-50% , -50%); */
+    
+}
+.homeslide-arrow button{
+    background: none;
+}
+.homeslide-arrow .arrow-btn{
+    border: none;
+    color: var(--purpleColor);
+    font-size: 30px;
+    position: relative;
+   
+   
+}
+.homeslide-arrow .next{
+    padding-left:80vw;
+}
+@media screen and (max-width: 850px){
+    .background-pictures{
+        height: 300px;    
+    }
+    .homeslide-arrow{
+        position: absolute;
+        top: 150px;
+        /* transform:translate(-50% , -50%); */
+        
+    }
+}

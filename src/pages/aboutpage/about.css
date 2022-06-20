@@ -1,23 +1,49 @@
-.newaboutpage{
-    padding: 30px 0
+
+.about-banner{
+    background:linear-gradient(180deg, rgba(226, 11, 233, 0.342), rgba(7, 7, 6, 0.192)),url("https://res.cloudinary.com/hayteetech/image/upload/v1642600833/Joyagunbiade.com/aboutbanner_cxugun.jpg");
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.newaboutpage .newabout-img img{
-    border-radius: 10px;
-    margin: 3px 30px 3px 0px;
-    width:400px;
-    height:400px; 
-    float:left;
-    transition: 0.4 all ease;
-    opacity: 1;
+.about-container{
+    width:100%;
+    padding:80px 0px 40px 0px;
 }
-.newaboutpage .newabout-img img:hover{
-    opacity:0.8
+.about-speaking .speaking-header{
+    color: #fff!important;
+    font-weight: bold!important;
+}
+.about-speaking p{
+    font-size: 21px!important;
+    color: #fff!important;
+    font-weight: 550;
+    max-width: 500px;
+}
+.newabout-img img{
+    width: 100%;
+    border-radius: 10%;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    /* 100% { transform: translateY(0); } */
 }
 .newabout-title{
     font-family: var(--textFamily);
     font-size: 50px;
     font-weight: 700;
     color:var(--purpleColor);
+    padding: 0px 20px;
 }
 .newabout-text{
     padding: 20px;
@@ -27,39 +53,165 @@
     color:var(--blackColor);
     line-height: 30px;
 }
-.newabout-text span{
+/* .newabout-text{
     color: var(--purpleColor);
     font-weight: bold;
     font-size: 20px;
-}
-
-/* .aboutpage{
-    padding: 30px 0px ;
-}
-.aboutpage .about-title{
-    color: var(--purpleColor);
-    font-family: var(--textFamily);
-    padding-bottom: 25px;
+} */
+.newabout-continue{
     font-size: 30px;
+    color:var(--purpleColor);
+    font-weight: bold;
 }
-.about-image img{
-    width: 100%;
-    height:350px;
-    display: block;
+.newabout-text span{
+    font-family:var(--cursiveFamily);
    
 }
-.about-content{
+
+/* another section starts here*/
+.about-session{
+    padding:10px 0px 50px 0px;
+}
+.about-social{
+    font-size: 50px;
+    font-family: var(--cursiveFamily);
+    color: var(--blackColor);
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.about-social span{
+    color:var(--purpleColor)
+}
+.about-social-container{
+    width:100%;
+    height:300px;
     position: relative;
+    margin-bottom: 10px;
+}
+.about-social-container img{
+    width:100%;
+    height:300px;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.4s all ease;
+    object-fit: calc(100% - 20px);
 }
 
-.aboutfamily{
-    position: relative;
-    top: -50px;
-}
-.aboutpage .about-text{
-    text-align: justify;
-    color: var(--blackColor);
-    font-size: 17px;
+.about-social-text{
+    border:5px solid var(--purpleColor);
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    opacity:1!important;
+    width:70%;
+    height:150px;
+    font-family: var(--textFamily);
+    color:var(--primaryColor);
+    font-weight: bold;
+    font-size: 18px;
     line-height: 30px;
-    font-family:  var(--textFamily);
-} */
+    background:linear-gradient(180deg, rgba(34, 34, 33, 0.445), rgba(8, 8, 8, 0.438)) ;
+}
+
+.about-social-text-linkedin{
+    color:var(--primaryColor);
+    opacity: 1!important;
+}
+.about-social-url{
+    width: 90%;
+    background: linear-gradient(180deg, rgba(214, 180, 236, 0.877), rgba(192, 153, 228, 0.582))!important;
+    height: 250px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: 0.4s all ease;
+}
+.about-social-url:hover{
+    transform: scale(1.06)
+}
+.about-social-url .about-link{
+    text-decoration: none;
+}
+.about-social-url .icon{
+    width: 150px;
+    height: 150px;
+    padding: 30px;
+    background: linear-gradient(180deg, rgba(224, 211, 25, 0.877), rgba(220, 236, 73, 0.582));
+    border-radius: 50%;
+    color: rgb(194, 191, 191)!important;
+}
+.about-social-url .social-icon{
+    display: block;
+    color: var(--primaryColor);
+    font-size: 19px;
+}
+.about-social-icon{
+    position: absolute;
+    bottom: 20px;
+    padding-left:10px
+}
+.about-social-icon .about-icon{
+    background:var(--primaryColor);
+    font-size: 20px;
+    width:30px;
+    height:30px;
+    padding: 4px;
+    border-radius: 4px;
+    color:#fff;
+}
+.about-social-icon span{
+    color: var(--purpleColor);
+    font-weight: 550;
+    font-size: 17px
+}
+.about-social-container:hover img{
+    transform: scale(1.05);
+    opacity:0.7
+}
+
+@media screen and (max-width: 850px){
+    .about-banner{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .about-container{
+        width:100%;
+        padding:0px 0px 40px 0px;
+    }
+    .newabout-title{
+        font-family: var(--textFamily);
+        font-size: 35px;
+        padding: 0px 10px
+    }
+    .newabout-text{
+        padding: 10px;
+    }
+    .about-social-container{
+        width:100%;
+        height:250px;
+        position: relative;
+    }
+    .about-social-container img{
+        width:100%;
+        height:250px;
+    }
+    .about-social-text{
+        font-size: 15px;   
+    }
+    .newabout-img img{
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+    .about-container{
+        margin-top: 30px;
+        padding: 0px 0px 5px 0px;
+    }
+}

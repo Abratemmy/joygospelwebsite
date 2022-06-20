@@ -6,10 +6,33 @@
 :root{
   --blackColor: #555454;
   --cursiveFamily:'Great Vibes', cursive;
-  --indieFamily: 'Indie Flower', cursive;
-  --headingFamily:'Quicksand', sans-serif;
-  --textFamily: 'Lato', sans-serif;
-  --purpleColor:rgb(172, 11, 187);
-  --primaryColor: #ffdd40;
-  --backgroundColor: rgb(245, 245, 164);
+  --headingFamily:'Open Sans', sans-serif;
+  --textFamily:'Raleway', sans-serif;
+  --purpleColor:#be0bce;
+  --primaryColor: #f3b10a;
+  --backgroundColor: linear-gradient(180deg, rgba(247, 68, 208, 0.856), rgb(233, 213, 37));
+  --mainBackground: rgb(238, 237, 237) url("https://res.cloudinary.com/hayteetech/image/upload/v1653151782/Joyagunbiade.com/backgroundstripe_wifbou.png");
+}
+body{
+  background: var(--mainBackground)!important;
+}
+
+.loading{
+  display: flex;
+  justify-content: center;
+}
+.loading::after{
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 10px solid #dddddd;
+  border-top-color: var(--primaryColor);
+  border-bottom-color: var(--purpleColor);
+  border-radius: 50%;
+  animation: loading 1s linear infinite!important;
+}
+@keyframes loading {
+  to{
+      transform:rotate(1turn);
+  }
 }

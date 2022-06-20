@@ -1,0 +1,200 @@
+.newnavbar {
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 15px 25px -15px var(--purpleColor);
+    transition:0.5s all ease;
+    z-index: 20;
+    background: #fff;
+}
+.newnavbar.active{
+    background: #fff;
+    position: -webkit-sticky;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height:100px;
+    box-shadow: 0px 15px 25px -15px var(--purpleColor);
+}
+.Navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding:0px 10px;
+}
+.newnav-logo {
+    color: var(--purpleColor);;
+    /* align-items: center; */
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: var(--cursiveFamily);
+}
+.newnav-logo img{
+    width:100%;
+    height:100px;
+    object-fit: contain;
+}
+.newnav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+.newnav-links {
+    color: var(--purpleColor);
+    text-decoration: none;
+    padding: 0rem 1.4rem;
+    height: 100%;
+    border-bottom: 3px solid transparent;
+    font-family: var(--textFamily);
+    font-weight: 600;
+    font-size:17px;
+}
+.newnav-links:hover{
+    color:var(--primaryColor);
+}
+
+.newnav-item {
+    line-height: 70px;
+}     
+.newnav-item:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+}   
+.newnav-item:hover:after  {
+    width: 100%;
+    background: var(--primaryColor);
+}
+.newnav-item .active {
+    color: var(--primaryColor);
+    border-top:3px solid var(--purpleColor);
+    padding-top:25px;
+}
+.newnav-icon{
+    display:none;
+}
+.dropdownlist{
+    display: block;
+}
+.newdropdown{
+    display:none;
+    position: absolute;
+    top:80px;
+    margin:0;
+    list-style: none;
+    padding:0;
+    text-align: left;
+    z-index: 20;
+}
+.newdropdown li{
+    background: var(--purpleColor);
+    padding: 5px 10px;
+    width:180px;
+    height:35px;
+    color:#fff;
+    transition:0.4s all ease;
+    z-index:50
+}
+
+.newdropdwon-navlink{
+    text-decoration: none;
+    color: #fff;
+    font-size:17px;
+    font-family: var(--textFamily);
+    font-weight:600;
+    transition:0.4s all ease;
+}
+.newdropdown li:hover{
+    background: var(--primaryColor);
+    color:#fff;
+}
+.newdropdown li .active{
+    color:var(--primaryColor);
+}
+.newdropdown .newdropdwon-navlink:hover {
+    color:#fff;
+}
+.dropdownlist:hover .newdropdown{
+    display:block;
+}
+
+/* ss for small devices start here */
+@media screen and (max-width:980px){
+    .newnav-icon{
+        display: block;
+    }
+    .newdropdown li{
+        background: var(--primaryColor)!important;
+        width:100vw;
+    }
+    .newdropdown li .active{
+        color:var(--purpleColor);
+    }
+    .newnav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid #fff;
+        position: absolute;
+        top: 90px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        text-align: left;
+    }
+    .newnav-menu.active {
+        background: var(--primaryColor);
+        left: 0px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+      
+    }
+    .newnav-item .active {
+        color: #fff;
+        border: none;
+        padding-top:10px;
+    }
+    .newnav-links {
+        padding: 0.5rem 0.5rem 0.5rem 0;
+        width: 100%;
+        display: table;
+    }
+    .newnav-item {
+        line-height: 15px;
+      
+    }
+
+    .newnav-links:hover{
+        background: var(--backgroundColor);
+        color: var(--purpleColor);
+    }
+
+    .newnav-icon{
+        color:var(--purpleColor);
+        font-size:25px;
+        cursor:pointer;
+        font-family: var(--textFamily);
+    }
+    .newnav-cancel{
+        color:var(--primaryColor)
+    }
+    .newdropdown{
+        margin-top: 60px;
+    }
+
+    .newdropdown li:hover{
+        background: var(--purpleColor);
+        color:#fff;
+        width: 100%;
+    }
+    .height li{
+       display:none 
+    }
+}
