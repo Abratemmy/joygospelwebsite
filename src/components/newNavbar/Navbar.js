@@ -56,7 +56,7 @@ function Navbar() {
                             
                             <ul className={dropdownclick ? "height newdropdown" :"newdropdown"}>
                                 <li><a href="https://gwop.joyagunbiade.com" active activeClassName="active" className="newdropdwon-navlink" onClick={handleClick}>GWOP</a></li>
-                                <li><a href="https://ges.joyagunbiade.com" active activeClassName="active" className="newdropdwon-navlink" onClick={handleClick}>HR Consulting</a></li>
+                                <li><a href="https://ges.joyagunbiade.com" active activeClassName="active" className="newdropdwon-navlink" onClick={handleClick}>Therapy Consulting</a></li>
                                 <li><a href="https://shop.joyagunbiade.com" active activeClassName="active" className="newdropdwon-navlink" onClick={handleClick}>Shop</a></li>
                                 <li><NavLink to="/prayer_request" active activeClassName="active" className="newdropdwon-navlink" onClick={handleClick}>Request Prayer</NavLink></li>
                                 <li><NavLink to="/contact" active activeClassName="active" className="newdropdwon-navlink" onClick={handleClick}>Contact</NavLink></li>

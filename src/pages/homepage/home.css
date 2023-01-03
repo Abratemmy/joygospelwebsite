@@ -1,36 +1,43 @@
-.homepage{
+.homepage {
     width: 100%;
-    z-index:999; 
+    z-index: 999;
 }
-h1{
-    color: var(--blackColor)!important;
-    font-family: var(--textFamily)!important;
+
+h1 {
+    color: var(--blackColor) !important;
+    font-family: var(--textFamily) !important;
     font-size: 50px;
-    font-weight: bold!important;
+    font-weight: bold !important;
 }
- h1 span{
+
+h1 span {
     color: var(--purpleColor)
 }
+
 /* css for the homepage banner */
-.homepage-banner{
-    background:linear-gradient(to left, rgba(85, 84, 84, 0.459), rgba(0, 0, 0, 0.993)),url("../../images/jjoybg.jpg");
-    background-repeat:no-repeat;
+.homepage-banner {
+    background: linear-gradient(to left, rgba(85, 84, 84, 0.459), rgba(0, 0, 0, 0.993)), url("../../images/jjoybg.jpg");
+    background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     width: 100%;
     height: 100vh;
     position: relative;
 }
-.homepage-banner .title{
+
+.homepage-banner .title {
     position: relative;
     padding-top: 12%;
     font-size: 60px;
-    color:#fff;
+    color: #fff;
     font-weight: bold;
     max-width: 650px;
     line-height: 65px;
+    font-family: var(--textFamily);
+    padding-bottom: 20px;
 }
-.homepage-banner p{
+
+.homepage-banner p {
     color: #fff;
     font-family: var(--textFamily);
     padding-top: 30px;
@@ -39,79 +46,94 @@ h1{
     letter-spacing: .7px
 }
 
+.home-button {
+    margin: 40px 0px 5px 0px;
+}
+
 .home-introduction {
     background: var(--backgroundColor);
     text-align: center;
 }
-.home-container{
+
+.home-container {
     padding: 30px 0px;
     max-width: 700px;
     margin: auto;
 }
-.home-container .home-img-hi{
+
+.home-container .home-img-hi {
     font-size: 45px;
     font-family: var(--textFamily);
-    color: var(--blackColor)!important;
+    color: var(--blackColor) !important;
     font-weight: 600
 }
-.home-container p{
+
+.home-container p {
     font-family: var(--textFamily);
-    font-size:18px;
+    font-size: 18px;
     color: var(--blackColor);
     line-height: 30px;
 }
 
-
 /* homeabout in homepage starts here */
-.home-about{
-    padding:40px 0px;
+.home-about {
+    padding: 40px 0px;
 }
-.home-about-image{
+
+.home-about-image {
     padding: 30px 0px;
 }
-.home-about-image img{
+
+.home-about-image img {
     border-radius: 5px;
     width: 100%;
     opacity: 1;
     transition: 0.4s all ease;
     /* object-fit: cover */
 }
-.home-about-image img:hover{
+
+.home-about-image img:hover {
     opacity: 0.8;
     transform: scale(1.02);
 }
-.home-about-text{
+
+.home-about-text {
     margin: 30px 0px;
     padding: 30px 15px;
     background: var(--backgroundColor);
     border-radius: 10px;
 }
-.home-about-text h1{
+
+.home-about-text h1 {
     font-family: var(--textFamily);
     font-size: 45px;
     text-align: center;
     padding-bottom: 10px;
 }
-.home-about-text p{
+
+.home-about-text p {
     color: var(--blackColor);
     font-family: var(--textFamily);
     font-size: 17px;
     line-height: 30px;
     text-align: justify;
-    
+
 }
-.home-about-text  span{
+
+.home-about-text span {
     display: block;
-    color:var(--purpleColor);
+    color: var(--purpleColor);
     font-family: var(--cursiveFamily);
     font-size: 35px;
     padding-top: 20px;
 }
-.button{
+
+.button {
     text-align: center;
     margin-top: 20px;
 }
-.navlinks-btn{
+
+.navlinks-btn {
     color: #fff;
     text-decoration: none;
     font-family: var(--textFamily);
@@ -120,90 +142,104 @@ h1{
     border-radius: 5px;
     transition: 0.4s all ease;
     background-color: var(--primaryColor);
-    font-weight:600
+    font-weight: 600
 }
-.navlinks-btn:hover{
+
+.navlinks-btn:hover {
     background-color: var(--purpleColor);
     border: none;
     color: #fff;
 }
 
 /* homeschedule css starts here */
-.home-schedule{
-    background-color:  var(--primaryColor);
+.home-schedule {
+    background-color: var(--primaryColor);
     text-align: center;
 }
-.home-schedule-col{
+
+.home-schedule-col {
     padding: 30px 0px
 }
-.home-schedule h1{
-    font-size:50px;
+
+.home-schedule h1 {
+    font-size: 50px;
     padding: 10px 0px 30px 0px;
 }
-.schedule-btn, .schedule-btn1{
+
+.schedule-btn,
+.schedule-btn1 {
     background: var(--purpleColor);
-    color:#fff;
-    border:none;
+    color: #fff;
+    border: none;
 }
-.schedule-btn:hover{
+
+.schedule-btn:hover {
     background: transparent;
     border: 2px solid var(--purpleColor);
 }
-.schedule-btn1:hover{
+
+.schedule-btn1:hover {
     color: var(--primaryColor)
 }
+
 /* css for home-card */
-.home-card{
+.home-card {
     padding: 50px 0px 30px 0px;
 }
-.home-card-title{
+
+.home-card-title {
     font-family: var(--cursiveFamily);
     color: var(--blackColor);
     font-size: 50px;
-    letter-spacing: 3px;
     font-weight: 700;
-    padding-bottom: 20px;
+    padding: 5px 0px 20px 0px;
 }
-.card-text{
-    color:var(--blackColor);
+
+.card-text {
+    color: var(--blackColor);
     font-size: 20px;
     font-family: var(--textFamily);
     text-align: center;
     font-weight: 500;
 }
-.card-navlink{
+
+.card-navlink {
     text-decoration: none;
 }
-.card-arrow{
+
+.card-arrow {
     background: var(--backgroundColor);
     width: 50px;
     height: 50px;
     border-radius: 50%;
     text-align: center;
     position: relative;
-    top:-30px;
+    top: -30px;
     justify-content: right;
     padding: 10px;
     display: flex;
     left: 80%;
 }
-.icon-arrow{
+
+.icon-arrow {
     text-align: center;
     font-size: 30px;
-    color:var(--purpleColor);   
+    color: var(--purpleColor);
 }
-.card-style{
-    width:100%;
-    margin:0 auto;
+
+.card-style {
+    width: 100%;
+    margin: 0 auto;
     position: relative;
-    overflow:hidden;
-    background: linear-gradient(180deg, rgba(214, 180, 236, 0.877), rgba(192, 153, 228, 0.582))!important;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(214, 180, 236, 0.877), rgba(192, 153, 228, 0.582)) !important;
     justify-content: center;
     align-items: center;
     padding: 40px 0px;
 }
-.home-card-icon{
-    color:rgb(194, 191, 191);
+
+.home-card-icon {
+    color: rgb(194, 191, 191);
     font-size: 30px;
     height: 220px;
     width: 220px;
@@ -213,56 +249,66 @@ h1{
     opacity: 0.8;
     position: relative;
 }
-.home-card-bg p{
+
+.home-card-bg p {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold
 }
-.card-style:hover .card-hover{
-    top:0;
+
+.card-style:hover .card-hover {
+    top: 0;
 }
-.card-style2 .card-hover{
-    height:400px;
+
+.card-style2 .card-hover {
+    height: 400px;
 }
-.card-style .card-hover{
+
+.card-style .card-hover {
     position: absolute;
     top: calc(100% - 3px);
-    left:0;
+    left: 0;
     width: 100%;
     height: 400px;
     background: linear-gradient(180deg, rgba(224, 211, 25, 0.877), rgba(220, 236, 73, 0.582));
-    z-index:1;
-    transition:0.5s
+    z-index: 1;
+    transition: 0.5s
 }
+
 /* jesus text starts here */
-.jesustext-col{
+.jesustext-col {
     padding: 40px 0px 30px 0px;
 }
-.icon-light{
-    color: var(--purpleColor)!important;
+
+.icon-light {
+    color: var(--purpleColor) !important;
     font-size: 22px
 }
-.jesustext{
-    color:var(--blackColor);
+
+.jesustext {
+    color: var(--blackColor);
     font-size: 20px;
     font-family: var(--textFamily);
     font-weight: 550;
 }
+
 /* css for home blog starts here */
-.home-blog-design{
+.home-blog-design {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
-    grid-row-gap:2rem;
+    grid-row-gap: 2rem;
     grid-column-gap: 38px;
 }
-.home-blog{
+
+.home-blog {
     padding: 50px 0px 30px 0px;
     width: 100%;
 }
-.home-blog-heading{
+
+.home-blog-heading {
     font-size: 50px;
     font-family: var(--cursiveFamily);
     color: var(--blackColor);
@@ -270,81 +316,168 @@ h1{
     padding: 5px 0px 20px 0px;
 }
 
-.home-blog-card{
+.home-blog-card {
     background: #fff;
     padding: 25px;
     transition: 0.4s all ease;
 }
-.home-blog-img{
-    position: relative; 
-    height: 210px; 
+
+.home-blog-img {
+    position: relative;
     width: 100%;
     overflow: hidden;
 }
-.home-blog-img img{
-    position: absolute; 
-    /* right: 0; 
-    bottom: 0; */
-    left:0;
+
+.home-blog-img span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 10px 0px;
+    height: 250px;
+}
+
+.home-blog-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+
+    /* height: 310px; */
+    /* position: absolute;
+    left: 0;
     border-radius: 10px;
     transition: 0.4s all ease;
-    width: 100%;
+    width: 100%; */
     /* object-fit: contain; */
 }
-.home-blog-card:hover img{
+
+.home-blog-card:hover img {
     transform: scale(1.03);
 }
-.home-blog-card img:hover{
+
+.home-blog-card img:hover {
     opacity: 0.5;
     image-orientation: flip;
 }
-.home-blog-content{
+
+.home-blog-content {
     display: flex;
     padding-bottom: 15px;
 }
-.home-blog-content .title{
+
+.home-blog-content .title {
     font-size: 15px;
-    color:var(--blackColor);
+    color: var(--blackColor);
     font-weight: 700;
     padding-top: 20px;
     font-family: var(--textFamily);
     text-transform: uppercase;
 }
+
 /* .home-blog-content .blog-text-display{
     display: flex;
 } */
-.home-blog-content .blog-text{
-    color:var(--blackColor);
+.home-blog-content .blog-text {
+    color: var(--blackColor);
     font-size: 15px;
-    font-family:var(--textFamily);
+    font-family: var(--textFamily);
 }
-.blog-button{
+
+.blog-button {
     text-align: center;
     padding-bottom: 30px;
 }
-@media screen and (max-width: 850px){
-    h1{
-        font-size: 30px!important;       
+
+@media screen and (max-width: 850px) {
+    .homepage-banner {
+        background: linear-gradient(to left, rgba(85, 84, 84, 0.459), rgba(0, 0, 0, 0.993)), url("../../images/jjoybg.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
     }
-    .home-img-hi{
-        font-size:30px;    
+
+    .homepage-banner .title {
+        font-size: 40px;
+        line-height: 45px;
+        padding-top: 8%;
     }
-    .home-about-image img{
+
+    .homepage-banner p {
+        font-size: 16px;
+        padding-top: 30px;
+        max-width: 100%;
+        line-height: 30px;
+    }
+
+    .home-button {
+        margin: 60px 0px !important;
+    }
+
+    h1 {
+        font-size: 35px !important;
+    }
+
+    .home-img-hi {
+        font-size: 35px !important;
+    }
+
+    .home-container p {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    .home-about-image img {
         height: 300px;
     }
-    .home-card-title{
-        font-size: 40px;
+
+    .home-card-title {
+        font-size: 35px;
     }
-    .home-blog-heading{
-        font-size: 40px;
+
+    .home-blog-heading {
+        font-size: 35px;
     }
-    .home-about, .home-schedule, .home-card{
-        margin-top:50px;
+
+    .home-about,
+    .home-card {
+        padding: 35px 0px;
     }
-    .home-blog{
+
+    .home-card-title,
+    .home-blog-heading {
+        font-size: 37px;
+        line-height: 30px;
+    }
+
+    .home-blog {
         padding: 40px 0px
     }
-    .home-blog-card img{
-        width: 85%;
+
+    .home-blog-img span {
+        height: auto;
+    }
+
+    .home-blog-card img {
+        width: 85%
+    }
+
+    .jesustext-col {
+        padding: 40px 0px 5px 0px;
+    }
+
+    .icon-light {
+        color: var(--purpleColor) !important;
+        font-size: 22px
+    }
+
+    .jesustext {
+        color: var(--blackColor);
+        font-size: 16px;
+        font-family: var(--textFamily);
+        font-weight: 550;
     }
 }

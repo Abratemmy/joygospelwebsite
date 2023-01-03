@@ -1,55 +1,50 @@
 import React, { Component } from 'react';
 import './home.css'
 import { Link, NavLink } from 'react-router-dom';
-import {MdKeyboardArrowRight} from 'react-icons/md';
-import {FaLightbulb, FaHandsHelping} from "react-icons/fa";
-import {RiMusic2Line} from "react-icons/ri";
-import {BiCalendarEvent} from "react-icons/bi"
+import { MdKeyboardArrowRight } from 'react-icons/md';
+import { FaLightbulb, FaHandsHelping } from "react-icons/fa";
+import { RiMusic2Line } from "react-icons/ri";
+import { BiCalendarEvent } from "react-icons/bi";
+import moment from "moment"
 
 export class Home extends Component {
     constructor(props) {
         super(props)
-    
+
         this.state = {
-             data:[],
-             loading: false,
+            data: [],
+            loading: false,
         }
     }
-    componentDidMount(){
+    componentDidMount() {
         this.setState({
             loading: true,
         })
-        return fetch(`https://wp.joyagunbiade.com/wp-json/wp/v2/blogs?per_page=3`)
-        .then((response) =>response.json())
-        .then((responseJson) =>{
-            this.setState({
-                data: responseJson,
-                loading: false,
-            });
-        })
-        .catch((error)=>{
-            console.log(error)
-        })
+        return fetch(`https://joyagunbiadeserver.onrender.com/blog`)
+            .then((response) => response.json())
+            .then((responseJson) => {
+                this.setState({
+                    data: responseJson,
+                    loading: false,
+                });
+            })
+            .catch((error) => {
+                console.log(error)
+            })
     }
     render() {
         return (
             <div className="homepage">
                 <div className='homepage-banner'>
                     <div className='container'>
-                        <div className='title wow slideInLeft'data-wow-duration="2s" data-wow-delay=".2s">It's time to arise and keep the light burning</div>
-                        <p className='wow slideInLeft'data-wow-duration="2s" data-wow-delay=".4s" data-wow-offset="10">I have a strong passion for people discovering their purpose and walking in it fully. I believe life is much sweeter when you know what you’re called by God to be and you simply being that.</p>
-                        <div className='wow slideInUp'data-wow-duration="2s" data-wow-delay=".6s" data-wow-offset="20" style={{paddingTop:"30px"}}>
+                        <div className='title wow slideInLeft' data-wow-duration="2s" data-wow-delay=".2s">It's time to arise and keep the light burning</div>
+                        <p className='wow slideInLeft' data-wow-duration="2s" data-wow-delay=".3s" data-wow-offset="10">I have a strong passion for people discovering their purpose and walking in it fully. I believe life is much sweeter when you know what you’re called by God to be and you simply being that.</p>
+                        <div className='wow slideInUp home-button' data-wow-duration="2s" data-wow-delay=".4s" data-wow-offset="20">
                             <NavLink to='/contact' className="navlinks-btn">Contact Me</NavLink>
                         </div>
                     </div>
                 </div>
-                {/* <div className="container">                  
-                    <h1 style={{padding:"0px 0px 20px 0px"}} className="wow slideInUp" data-wow-duration="2s">
-                        It's time to <br />keep the <span>light burning</span></h1>  
-                </div>
 
-                <Reactslick /> */}
-              
                 <div className="home-introduction ">
                     <div className="container">
                         <div className="home-container">
@@ -66,7 +61,7 @@ export class Home extends Component {
                         <div className="row">
                             <div className="col-lg-4 col-md-4 col-sm-12">
                                 <div className="home-about-image wow zoomIn" data-wow-duration="2s" data-wow-delay=".4s">
-                                    <img src="https://res.cloudinary.com/hayteetech/image/upload/v1641461422/Joyagunbiade.com/img5_kf4ngo.jpg" alt="loading"/>
+                                    <img src="https://res.cloudinary.com/hayteetech/image/upload/v1641461422/Joyagunbiade.com/img5_kf4ngo.jpg" alt="loading" />
                                 </div>
 
                             </div>
@@ -77,13 +72,13 @@ export class Home extends Component {
                                         <div className="col-lg-6 col-md-6 col-sm-12 wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
                                             <p>Each day you and I get to CHOOSE. The choice to take action to accomplish what you want or what you deserve is entirely up to you.
                                                 Your choices reflects your hopes and not your fear. Every decision you make, makes you and I'm sure that you, like me, will never let other people choose who you're going to be.
-                                                 {/* We get this one life to live and I’m sure that you, like me, want to live it well. */}
+                                                {/* We get this one life to live and I’m sure that you, like me, want to live it well. */}
                                             </p>
-                                        </div> 
-                                        <div className="col-lg-6 col-md-6 col-sm-12 wow slideInRight"data-wow-duration="2s" data-wow-delay=".4s">
-                                            <p>I write, speak, and share my life in hopes that it might encourage you, help you grow, and inspire you to make choices today that will build the 
+                                        </div>
+                                        <div className="col-lg-6 col-md-6 col-sm-12 wow slideInRight" data-wow-duration="2s" data-wow-delay=".4s">
+                                            <p>I write, speak, and share my life in hopes that it might encourage you, help you grow, and inspire you to make choices today that will build the
                                                 tomorrow of your dreams. <br />If you need a friend to cheer you on to choose right. . .
-                                                
+
                                             </p>
                                             <span>I’m your girl.</span>
                                         </div>
@@ -92,9 +87,9 @@ export class Home extends Component {
                                         <NavLink to='/about' className="navlinks-btn schedule-btn">Learn More</NavLink>
                                     </div>
                                 </div>
-                                
+
                             </div>
-                        </div>                        
+                        </div>
                     </div>
                 </div>
 
@@ -108,7 +103,7 @@ export class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
 
                 {/*this sections is for the blog, podcast and so on  */}
                 <div className="home-card">
@@ -117,48 +112,48 @@ export class Home extends Component {
                             Here's what I have for you
                         </div>
                         <div className="row">
-                        <div className="col-lg-4 col-md-12 col-sm-12 wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                            <a href="https://gwop.joyagunbiade.com" className="card-navlink">
-                                <div className="card card-style" >
-                                    <div className="home-card-bg">
-                                        <FaHandsHelping className="home-card-icon" />
-                                        <p className="card-text">GWOP</p>
+                            <div className="col-lg-4 col-md-12 col-sm-12 wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                                <a href="https://gwop.joyagunbiade.com" className="card-navlink">
+                                    <div className="card card-style" >
+                                        <div className="home-card-bg">
+                                            <FaHandsHelping className="home-card-icon" />
+                                            <p className="card-text">GWOP</p>
+                                        </div>
+                                        <div className="card-hover"></div>
                                     </div>
-                                    <div className="card-hover"></div>
-                                </div>
-                                <div className="card-arrow">
-                                    <MdKeyboardArrowRight className="icon-arrow" />
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col-lg-4 col-md-12 col-sm-12 wow slideInUp" data-wow-duration="2s" data-wow-delay=".4s">
-                            <a href="https://ges.joyagunbiade.com" className="card-navlink">
-                                <div className="card card-style card-style2" >
-                                    <div className="home-card-bg">
-                                        <BiCalendarEvent className="home-card-icon" />
-                                        <p className="card-text">CONSULTING</p>
+                                    <div className="card-arrow">
+                                        <MdKeyboardArrowRight className="icon-arrow" />
                                     </div>
-                                    <div className="card-hover card-hover2"></div>
-                                </div>
-                                <div className="card-arrow">
-                                    <MdKeyboardArrowRight className="icon-arrow" />
-                                </div>
-                            </a>
-                        </div>
-                        <div className="col-lg-4 col-md-12 col-sm-12 wow slideInUp" data-wow-duration="2s" data-wow-delay=".6s">
-                            <NavLink to="/podcasts" className="card-navlink">
-                                <div className="card card-style" >
-                                    <div className="home-card-bg">
-                                        <RiMusic2Line className="home-card-icon "/>
-                                        <p className="card-text">PODCAST</p>
+                                </a>
+                            </div>
+                            <div className="col-lg-4 col-md-12 col-sm-12 wow slideInUp" data-wow-duration="2s" data-wow-delay=".4s">
+                                <a href="https://ges.joyagunbiade.com" className="card-navlink">
+                                    <div className="card card-style card-style2" >
+                                        <div className="home-card-bg">
+                                            <BiCalendarEvent className="home-card-icon" />
+                                            <p className="card-text">THERAPY CONSULTING</p>
+                                        </div>
+                                        <div className="card-hover card-hover2"></div>
                                     </div>
-                                    <div className="card-hover"></div>
-                                </div>
-                                <div className="card-arrow">
-                                    <MdKeyboardArrowRight className="icon-arrow" />
-                                </div>                                    
-                            </NavLink>
-                        </div>
+                                    <div className="card-arrow">
+                                        <MdKeyboardArrowRight className="icon-arrow" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="col-lg-4 col-md-12 col-sm-12 wow slideInUp" data-wow-duration="2s" data-wow-delay=".6s">
+                                <NavLink to="/podcasts" className="card-navlink">
+                                    <div className="card card-style" >
+                                        <div className="home-card-bg">
+                                            <RiMusic2Line className="home-card-icon " />
+                                            <p className="card-text">PODCAST</p>
+                                        </div>
+                                        <div className="card-hover"></div>
+                                    </div>
+                                    <div className="card-arrow">
+                                        <MdKeyboardArrowRight className="icon-arrow" />
+                                    </div>
+                                </NavLink>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -169,7 +164,7 @@ export class Home extends Component {
                         <div className="row">
                             <div className="col-lg-1 col-md-1 col-sm 1">
                                 <div className="jesustext-col">
-                                    <FaLightbulb className="icon-light"/>
+                                    <FaLightbulb className="icon-light" />
                                 </div>
                             </div>
                             <div className="col-lg-11 col-md-11 col-sm-11">
@@ -179,7 +174,7 @@ export class Home extends Component {
                             </div>
                         </div>
 
-                        
+
                     </div>
                 </div>
 
@@ -192,41 +187,40 @@ export class Home extends Component {
 
 
                         {this.state.loading ? (<div>
-                                <div className="loading" style={{paddingBottom: "30px"}}></div>
-                            </div>) : ( 
+                            <div className="loading" style={{ paddingBottom: "30px" }}></div>
+                        </div>) : (
                             <div className="home-blog-design">
-                                {this.state.data.map((item,i)=>{
-                                    return(
+                                {this.state.data.sort((a, b) => moment(new Date(b.createdAt)) - moment(new Date(a.createdAt))).slice(0, 3).map((item, i) => {
+                                    return (
                                         <div className="home-blog-card wow slideInUp" key={i}  >
-                                            <div className='home-blog-img'><img src={item.acf.image.url} alt="loading"  /></div>
+                                            <div className='home-blog-img'><span><img src={item.image} alt="loading" /></span></div>
                                             <div className="home-blog-content">
-                                                {/* <div className="date">{item.date}</div> */}
                                                 <div className="">
-                                                    <p className="title" dangerouslySetInnerHTML={{__html:  item.title.rendered}} />
+                                                    <p className="title">{item.title}</p>
                                                     <div className='blog-text-display'>
-                                                        <p className="blog-text" dangerouslySetInnerHTML={{__html: item.excerpt.rendered }}/>
-                                                      
+                                                        <p className="blog-text">{item.excerpt}...</p>
+
                                                     </div>
                                                 </div>
                                             </div>
                                             <div className="button ">
-                                                <Link to= {`/blogs/${item.id}`} className="navlinks-btn schedule-btn schedule-btn1">Read More</Link>
+                                                <Link to={`/blogs/${item.title.split(" ").join("-")}`} className="navlinks-btn schedule-btn schedule-btn1">Read More</Link>
                                             </div>
 
 
                                         </div>
                                     )
                                 }
-                                    )}
-                                
+                                )}
+
                             </div>
                         )}
                     </div>
                 </div>
-                    
+
             </div>
         )
-     
+
     }
 }
 

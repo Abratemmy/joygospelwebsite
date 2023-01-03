@@ -111,12 +111,12 @@ function Speaking () {
                     <div className="row">
                         <div className="col-lg-5 col-md-5 col-sm-12">
                             <div className="speaking-banner-title">
-                                <h1>I INVEST IN THE SUCCESS OF YOUR EVENT</h1>
+                                <div>I invest in the success of your event</div>
                             </div>
                         </div>
                         <div className="col-lg-7 col-md-7 col-sm-12">
                             <div className="speaking-banner">
-                                <p>I partner with you to help promote your event by sharing your event details with my audience on social media platforms. I have experience 
+                                <p>I partner with you to help promote your event by sharing your event details With my audience of over 5,200 followers on social media platforms. I have experience 
                                     planning conferences and discovered promotion is a pivotal part of a successful event.
                                 </p>
                                 <p>Whether it’s a pre-interview before the event or creating a welcome video, I want to do whatever I can to give your attendees
@@ -128,16 +128,16 @@ function Speaking () {
                 </div>
             </div>
 
-            <div className="event-schedule" style={{marginBottom:"30px"}}>
-                <div className="container">
-                    <div className="upcoming-event" id="upcoming" >
-                        <div className="event-header"><span>Here's my </span> Upcoming Event</div>
-                        <div className="event-display">
-                            {event.map((event, i) => (
-                            <Fragment>
-                            
-                                {new Date(event.acf.startdate) >= currentDate ? (
-                                    <div className="" key={i}>
+            <div className="" style={{marginBottom:"30px"}}>
+                <div className="upcoming-event" id="upcoming" >
+                    <div className="event-display">
+                        {event.map((event, i) => (
+                        <Fragment>
+                        
+                            {new Date(event.acf.startdate) >= currentDate ? (
+                                <div className="event-schedule" key={i}>
+                                    <div className='container'>
+                                        <div className="event-header"><span>Here's my </span> Upcoming Event</div>
                                         <a href={event.acf.url} className="event-link" >
                                             <div className="event-title">
                                             <div dangerouslySetInnerHTML={{__html: event.title.rendered}}/>
@@ -150,14 +150,15 @@ function Speaking () {
                                             {event.acf.location}
                                         </div>
                                     </div>
-                                ) : (
-                                    ""
-                                )}
-                            </Fragment>
-                            ))}                        
-                        </div>
-                    </div>               
-                </div>
+                                </div>
+                            ) : (
+                                ""
+                            )}
+                        </Fragment>
+                        ))}                        
+                    </div>
+                </div>               
+                
             </div>
         
             <div className="form-style" id="main" >

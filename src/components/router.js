@@ -1,5 +1,5 @@
 import React from 'react';
-import {Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import About from '../pages/aboutpage/about';
 import Blog from '../pages/newblog/blog';
 import Blogitem from '../pages/newblog/blogitem/blogitem';
@@ -13,13 +13,13 @@ import Successtories from '../pages/successStories/stories';
 import Podcast from "../pages/podcast/podcast";
 
 
-const Router = ()=>(
+const Router = () => (
     <Switch>
-        <Route exact path ='/' component ={Home} />
-        <Route exact path ='/about' component={About} />
+        <Route exact path='/' component={Home} />
+        <Route exact path='/about' component={About} />
         <Route exact path='/contact' component={Contact} />
         {/* <Route exact path='/jaweb/blogs' component={Blogpost} /> */}
-        <Route exact path ='/blogs/:id' component={Blogitem} />
+        <Route exact path='/blogs/:title' component={Blogitem} />
         <Route exact path='/speaking_request' component={Speaking} />
         <Route exact path='/blogs' component={Blog} />
         <Route exact path="/events" component={Newevent} />
@@ -27,9 +27,9 @@ const Router = ()=>(
         <Route exact path="/success_stories" component={Successtories} />
         <Route exact path="/prayer_request" component={Prayerrequest} />
         <Route exact path="/podcasts" component={Podcast} />
-    
+
         {/* <Route exact path='/jaweb/event/:slug' component={} */}
-       
+
     </Switch>
 )
 export default Router

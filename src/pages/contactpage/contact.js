@@ -22,7 +22,7 @@ const Contact = () =>{
                         <li>If you would like to contact me for any other reason, I’d love to hear from you! 
                             Simply use the form below to send me a message!</li>
                     </ul>
-                    <p>Please allow 2-3 business days for a reply. I receive a lot of email on a
+                    <p>Please allow 2-3 business days for a reply. I receive a lot of emails on a
                         daily basis but I always make sure to reply and get in touch with everyone that contacts me. To get to recent post <NavLink to="/blogs" className="contact-nav"> Click here.</NavLink> </p>
                 </div>
             </div>

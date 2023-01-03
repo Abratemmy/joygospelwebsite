@@ -68,7 +68,7 @@ video{
 /* this for the event header */
 
 .upcoming-event{
-    padding: 30px 0px 40px 0px;
+    padding: 10px 0px 20px 0px;
    
 }
 .event-header{
@@ -105,9 +105,9 @@ video{
     grid-row-gap:2rem;
     grid-column-gap: 38px;
 }
-.upcoming-event-display{
+/* .upcoming-event-display{
     padding: 20px 0px;
-}
+} */
 .event-link{
     text-decoration: none;
 }
