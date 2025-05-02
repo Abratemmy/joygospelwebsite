@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-const API = 'AIzaSyCtWVsvznMdqWFyjAdAwVj0cP9wPs4WgWI';
-const playlistID = 'PLm1J2EyF0MNTCxp7Ko3kVZnCp4wZMUtEA';
+const API = 'AII';
+const playlistID = 'P';
 const result=2;
 
 
