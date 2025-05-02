@@ -16,8 +16,9 @@
 
 .blogpageposts .blog-title {
     padding-bottom: 15px;
-    color: var(--purpleColor);
-    font-size: 27px;
+    color: var(--primaryColor);
+    font-family: var(--headingFamily);
+    font-size: x-large;
     font-weight: 600;
     text-transform: capitalize;
 }
@@ -136,15 +137,16 @@
     list-style: none;
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 .paginationBttns a {
     padding: 7px;
     margin: 4px;
     border-radius: 5px;
-    background: var(--primaryColor);
+    background: var(--newBackground);
     text-decoration: none;
-    color: var(--blackColor);
+    color: #fff!important;
     font-family: var(--textFamily);
     cursor: pointer;
     transition: 0.4s all ease;
@@ -154,21 +156,21 @@
 
 .paginationBttns a:hover {
     background: var(--purpleColor);
-    color: #fff;
+    color: #fff!important;
 }
 
 .paginationActive a {
     background: var(--purpleColor);
-    color: #fff;
+    color: #fff!important;
 }
 
 /* blogpoststyle ends here */
 
 /* blog sidebar starts here */
 .blog-sidebar-title {
-    font-family: var(--textFamily);
-    font-size: 23px;
-    color: var(--blackColor);
+    font-family: var(--headingFamily);
+    font-size: large;
+    color: var(--primaryColor);
     padding-bottom: 15px;
     font-weight: 600
 }

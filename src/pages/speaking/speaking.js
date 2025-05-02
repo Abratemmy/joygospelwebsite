@@ -95,7 +95,7 @@ function Speaking() {
             <div className="speaking-picture">
                 <div className="container">
                     <div className="speaking-pictext">
-                        <h1 className=" speaking-header">Your audience deserve to be fascinated with the act of storytelling </h1>
+                        <div className="pageTitle speaking-header">Your audience deserve to be fascinated with the act of storytelling </div>
                         <p>Your event deserves a speaker who seeks to invest in you and your attendees more than you invest in them.</p>
 
                         <div className="button ">
@@ -136,7 +136,8 @@ function Speaking() {
                             {event.length !== 0 ?
                                 (
                                     <div>
-                                        <div className="event-header"><span>Here's my </span> Upcoming Event</div>
+                                        {/* <div className="event-header"><span>Here's my </span> Upcoming Event</div> */}
+                                        <div className="event-header pageTitle"><span>Do Not</span> Hesitate To Invite Me</div>
                                         <div className='event-display'>
                                             {event.sort((a, b) => moment(new Date(b.startdate)) - moment(new Date(a.startdate))).map((event, i) => (
                                                 <Fragment>

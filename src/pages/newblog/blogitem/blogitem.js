@@ -4,31 +4,33 @@ import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import ReactPlayer from 'react-player';
 import Sidebar from '../sidebar';
 import { useParams } from 'react-router-dom';
+import blogData from '../../../components/data/BlogData';
 
 
 function Blogitem() {
     const { title } = useParams();
-    const [singleblog, setSingleblog] = useState([]);
+    // const [singleblog, setSingleblog] = useState([]);
     const [loading, setLoading] = useState(false);
+    const singleblog = blogData.find(data => ((data.title).split(" ").join("-")) === title)
 
-    useEffect(() => {
-        const getTemplate = async () => {
-            setLoading(true);
-            let response = await fetch(`https://joyagunbiadeserver.onrender.com/blog/${title}`);
-            response = await response.json();
-            console.log("resp", response)
-            setSingleblog(response);
-            setLoading(false);
-        }
-        getTemplate();
-    }, [title])
+
+    // useEffect(() => {
+    //     const getTemplate = async () => {
+    //         setLoading(true);
+    //         let response = await blogData;
+    //         console.log("resp", response)
+    //         setSingleblog(response);
+    //         setLoading(false);
+    //     }
+    //     getTemplate();
+    // }, [title])
 
 
 
     return (
         <Fragment>
             <div className="blogitem-background">
-                <h1 className="text-center">Joy Agunbiade</h1>
+                <h1 className="text-center">Joy Gospel</h1>
                 <p className="text-center">{singleblog.title}</p>
             </div>
 
@@ -42,7 +44,7 @@ function Blogitem() {
                                         <img src="https://res.cloudinary.com/hayteetech/image/upload/v1641566846/Joyagunbiade.com/blogitem-logo_byljpv.jpg" alt="logo" />
                                     </div>
                                     <div className="col-10">
-                                        <div className="blog-item-logo-text">From the office of <span>Joy agunbiade </span></div>
+                                        <div className="blog-item-logo-text">From the office of <span>Joy Gospel </span></div>
                                     </div>
                                 </div>
 
@@ -60,11 +62,11 @@ function Blogitem() {
 
 
                                 <div className="">
-                                    {singleblog.podcast !== "" ?
+                                    {/* {singleblog.podcast !== "" ?
                                         <div className="blog-podcast-audio">
-                                            {/* <audio controls autoPlay>
+                                            <audio controls autoPlay>
                                                 <source src={singleblog.podcast} id="src_mpeg" type="audio/mpeg" />
-                                            </audio> */}
+                                            </audio>
 
                                             <audio src={singleblog.podcast} controls autoPlay id="src_mpeg" type="audio/mp3" />
 
@@ -74,11 +76,11 @@ function Blogitem() {
                                         </div>
 
                                         :
-                                        <div className="blog-spotify-container">
-                                            Check <a href="https://open.spotify.com/show/5o1MOtBi5EqZcmczN7RRt9" className="blog-spotify" target="_blank" rel="noopener noreferrer" >spotify</a> for our Podcasts
-                                        </div>
-                                    }
-
+                                       
+                                    } */}
+                                    <div className="blog-spotify-container">
+                                        Check <a href="https://open.spotify.com/show/5o1MOtBi5EqZcmczN7RRt9" className="blog-spotify" target="_blank" rel="noopener noreferrer" >spotify</a> for our Podcasts
+                                    </div>
 
 
                                     {/* {(singleblog.podcast) !== false ? (
@@ -100,7 +102,11 @@ function Blogitem() {
                                     <img src={singleblog.image} alt="loading" width="100%" />
                                 </div>
 
-                                <p >{singleblog.content}</p>
+                                <p >{singleblog.text.map((data, i) => {
+                                    return (
+                                        <p key={i}>{data.content}</p>
+                                    )
+                                })}</p>
 
                                 <div className="blog-watch" style={{ margin: "20px 0px" }}>
                                     <ReactPlayer url="https://m.youtube.com/watch?v=MpvAw_VbD_4&list=PLRD0eUzezIu2-ibYbRz7-Y0deAMYfFQNc&index=10"

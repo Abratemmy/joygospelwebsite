@@ -21,9 +21,8 @@
     max-width:420px;
     color:#fff;
     font-family: var(--textFamily);
-    font-size:18px;
+    font-size:16px;
     line-height:30px;
-    font-weight: 600;
 }
 .speaking-pictext .button{
     text-align: left!important;
@@ -36,7 +35,6 @@
 .speaking-header{
     color:#fff!important;
     max-width: 550px;
-    font-size: 40px!important;
 }
 /* another section starts here */
 .speakingBanner{
@@ -46,7 +44,7 @@
     padding: 0px 40px;
 }
 .speaking-banner-title {
-    font-family:var(--textFamily);
+    font-family:var(--headingFamily);
     font-size:35px;
     color: var(--blackColor);
     line-height: 45px;
@@ -57,7 +55,7 @@
     font-family: var(--textFamily);
     line-height: 30px;
     color:var(--blackColor);
-    font-size: 17px;
+    font-size: 16px;
     text-align: justify;
 }
 .speaking-video{
@@ -72,7 +70,7 @@
 }
 
 .speakingcontent .title{
-    font-family: var(--cursiveFamily);
+    font-family: var(--headingFamily);
     font-size: 45px;
     color:var(--blackColor);
     font-weight: bold;
@@ -85,7 +83,7 @@
     margin-left: 20vw;
     max-width: 800px;
     color:var(--blackColor);
-    font-size: 17px;
+    font-size: 16px;
 }
 
 /* css for speaking form */
@@ -118,7 +116,7 @@
 }
 .speaking-container .speaking-form label{
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--blackColor);
     font-weight: 600;
 }
@@ -133,7 +131,7 @@
     border: 1px solid var(--purpleColor);
     transition: 0.4s all ease;
     color:var(--blackColor);
-    font-size:18px;
+    font-size:16px;
     font-family: var(--textFamily);
 }
 .speaking-container .speaking-form p{
@@ -207,11 +205,19 @@
     .speaking-header{
         color:#fff!important;
         max-width: 100%;
-        font-size: 35px!important;
+        font-size: 35px!;
     }
 
     .speaking-banner-title {
         font-size:25px;
         padding: 10px 10px;
+    }
+}
+@media screen and (max-width:570px){
+    .speaking-header{
+        font-size: x-large;
+    }
+    .speaking-container{
+        margin:0;
     }
 }

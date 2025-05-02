@@ -4,6 +4,8 @@ import { FaInstagram } from 'react-icons/fa';
 import { RiLinkedinFill } from 'react-icons/ri'
 import moment from 'moment';
 import Searchbar from './searchbar/searchbar';
+import Blogpost from './blogpost';
+import blogData from '../../components/data/BlogData';
 
 export class Sidebar extends Component {
     constructor(props) {
@@ -19,22 +21,22 @@ export class Sidebar extends Component {
 
     })
 
-    componentDidMount() {
-        this.setState({
-            loading: true,
-        })
-        return fetch(`https://joyagunbiadeserver.onrender.com/blog?per_page=5`)
-            .then((response) => response.json())
-            .then((responseJson) => {
-                this.setState({
-                    data: responseJson,
-                    loading: false
-                });
-            })
-            .catch((error) => {
-                console.log(error)
-            })
-    }
+    // componentDidMount() {
+    //     this.setState({
+    //         loading: true,
+    //     })
+    //     return fetch(`https://joyagunbiadeserver.onrender.com/blog?per_page=5`)
+    //         .then((response) => response.json())
+    //         .then((responseJson) => {
+    //             this.setState({
+    //                 data: responseJson,
+    //                 loading: false
+    //             });
+    //         })
+    //         .catch((error) => {
+    //             console.log(error)
+    //         })
+    // }
     render() {
         return (
             <div>
@@ -77,14 +79,14 @@ export class Sidebar extends Component {
                             </div>
                             <div className="sidebarposts">
 
-                                {this.state.data.sort((a, b) => moment(new Date(b.createdAt)) - moment(new Date(a.createdAt))).slice(0, 5).map((item, i) => {
+                                {blogData.sort((a, b) => b.id - a.id).slice(0, 5).map((item, i) => {
                                     return (
                                         <NavLink to={`/blogs/${item.title.split(" ").join("-")}`} className="sidebarposts-nav">
                                             <div className="sidebar-post" key={i}>
                                                 <img src={item.image} alt="loading" />
                                                 <div className="sidebar-postcontent">
                                                     <span>{item.title}</span><br />
-                                                    <p>{moment(item.createdAt).format("MMMM")} {moment(item.createdAt).format("Do")}, {moment(item.createdAt).format("YYYY")}</p>
+                                                    <p>{item.dateMonth} - {item.dateDay}- {item.dateYear}</p>
                                                 </div>
                                             </div>
                                         </NavLink>

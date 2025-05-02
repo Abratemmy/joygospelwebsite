@@ -4,17 +4,41 @@
 }
 
 :root{
-  --blackColor: #555454;
+  --blackColor: #333;
   --cursiveFamily:'Great Vibes', cursive;
-  --headingFamily:'Open Sans', sans-serif;
-  --textFamily:'Raleway', sans-serif;
-  --purpleColor:#be0bce;
-  --primaryColor: #f3b10a;
-  --backgroundColor: linear-gradient(180deg, rgba(247, 68, 208, 0.856), rgb(233, 213, 37));
+  --headingFamily:"PT Serif", serif;
+  --textFamily:"Quattrocento Sans", sans-serif;
+  /* --purpleColor:#be0bce; */
+  /* --primaryColor: #f3b10a; */
+  --purpleColor: #c9a66b;
+  --primaryColor: #114b3a;
+  --backgroundColor: linear-gradient(to right, rgba(17, 75, 20, 0.521), rgb(0, 0, 0)),rgba(255, 255, 255, 0);
   --mainBackground: rgb(238, 237, 237) url("https://res.cloudinary.com/hayteetech/image/upload/v1653151782/Joyagunbiade.com/backgroundstripe_wifbou.png");
+  --newBackground: linear-gradient(to right, rgba(17, 75, 20, 0.521), rgb(0, 0, 0)),rgba(255, 255, 255, 0);
 }
 body{
   background: var(--mainBackground)!important;
+  font-family: var(--textFamily);
+  font-size: 16px;
+}
+@media screen and (max-width: 768px){
+  .container{
+    margin-left: 3%!important;
+    margin-right: 3%!important;
+    max-width: 96%;
+  }
+  
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+      max-width: 768px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+      max-width: 540px;
+  }
 }
 
 .loading{
@@ -35,4 +59,47 @@ body{
   to{
       transform:rotate(1turn);
   }
+}
+
+.pageSubtitle{
+  font-family: var(--headingFamily);
+  font-size: 18px;
+  color: var(--primaryColor);
+  font-weight: 600;
+  padding: 5px 0px 5px 0px;
+  text-transform: uppercase;
+}
+.pageTitle{
+  font-family: var(--headingFamily);
+  font-size: 35px;
+  color: var(--blackColor);
+  font-weight: 600;
+  padding: 5px 0px 20px 0px;
+  text-transform: uppercase;
+}
+.pageText{
+  font-family: var(--textFamily);
+  font-size: 16px;
+  color: var(--blackColor);
+  padding: 5px 0px 5px 0px;
+}
+@media screen and (max-width: 768px){
+  .pageTitle{
+    font-size: 25px;
+  }
+  .pageSubtitle{
+    font-size: 15px;
+  }
+
+}
+@media screen and (max-width: 570px){
+  .pageTitle{
+    font-size: large;
+  }
+  .pageSubtitle{
+    font-size: 14px;
+  }
+}
+ul{
+  list-style: none;
 }

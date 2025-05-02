@@ -1,14 +1,23 @@
 .pagesheaderpage{
-    background:var(--backgroundColor)
+    background:#c9a66b31;
+    height: 180px;
 }
 .pagesheaderpage .otherpagestitle{
     font-size: 50px;
     color:#fff;
-    font-family: var(--textFamily);
-    padding: 30px 0px;
+    font-family: var(--headingFamily);
+    padding: 50px 0px;
     font-weight: 700;
     text-transform: capitalize;
+    width: 100%;
+    margin: auto 0;
 }
 .pagesheaderpage .otherpagestitle span{
     color:var(--primaryColor);
+}
+@media screen and (max-width: 560px){
+    .pagesheaderpage .otherpagestitle{
+        font-size: 30px;
+    }
+    
 }

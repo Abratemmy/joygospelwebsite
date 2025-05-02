@@ -4,18 +4,19 @@
     align-items: center;
     box-shadow: 0px 15px 25px -15px var(--purpleColor);
     transition: 0.5s all ease;
-    z-index: 20;
-    background: #fff;
+    z-index: 999;
+    background: var(--newBackground);
 }
 
 .newnavbar.active {
-    background: #fff;
+    background: linear-gradient(to left, rgba(17, 75, 20, 0.856), rgb(0, 0, 0)),rgba(255, 255, 255, 0);
     position: -webkit-sticky;
     position: fixed;
     top: 0;
     width: 100%;
     height: 100px;
     box-shadow: 0px 15px 25px -15px var(--purpleColor);
+    z-index:1000;
 }
 
 .Navigation {
@@ -24,7 +25,6 @@
     align-items: center;
     width: 100%;
     height: 100px;
-    padding: 0px 10px;
 }
 
 /* .newnav-logo img{
@@ -34,7 +34,6 @@
 } */
 .newnav-logo {
     align-items: center;
-    margin-left: 20px;
 }
 
 .newnav-logo img {
@@ -52,16 +51,16 @@
 .newnav-links {
     color: var(--purpleColor);
     text-decoration: none;
-    padding: 0rem 1.4rem;
+    padding: 1rem 1.3rem;
     height: 100%;
     border-bottom: 3px solid transparent;
-    font-family: var(--textFamily);
+    font-family: var(--headingFamily);
     font-weight: 600;
     font-size: 17px;
 }
 
 .newnav-links:hover {
-    color: var(--primaryColor);
+    color: #fff;
 }
 
 .newnav-item {
@@ -79,11 +78,11 @@
 
 .newnav-item:hover:after {
     width: 100%;
-    background: var(--primaryColor);
+    background: #fff;
 }
 
 .newnav-item .active {
-    color: var(--primaryColor);
+    color: #fff;
     border-top: 3px solid var(--purpleColor);
     padding-top: 25px;
 }
@@ -101,17 +100,20 @@
     position: absolute;
     top: 80px;
     margin: 0;
+    right: 50px;
     list-style: none;
     padding: 0;
     text-align: left;
     z-index: 20;
+    border-radius: 10px;
+    background: var(--purpleColor);
 }
 
 .newdropdown li {
-    background: var(--purpleColor);
-    padding: 5px 10px;
-    width: 230px;
-    height: 40px;
+   
+    padding: 10px 10px;
+    width: 210px;
+    /* height: 40px; */
     color: #fff;
     transition: 0.4s all ease;
     z-index: 50
@@ -142,16 +144,26 @@
 .dropdownlist:hover .newdropdown {
     display: block;
 }
+.forMobile{
+    display: none;
+}
 
 /* ss for small devices start here */
-@media screen and (max-width:980px) {
+@media screen and (max-width:992px) {
+    .dropdownlist:hover .newdropdown {
+        display: none;
+    }
     .newnav-icon {
+        display: block;
+    }
+    .forMobile{
         display: block;
     }
 
     .newdropdown li {
         background: var(--primaryColor) !important;
-        width: 100vw;
+        /* width: 100vw;
+        padding-left: 50px; */
     }
 
     .newdropdown li .active {
@@ -162,9 +174,9 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        border-top: 1px solid #fff;
+        /* border-top: 1px solid #fff; */
         position: absolute;
-        top: 90px;
+        top: 92px;
         left: -110%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -172,11 +184,15 @@
     }
 
     .newnav-menu.active {
-        background: var(--primaryColor);
+        background: var(--purpleColor);
         left: 0px;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
+        height: auto;
+        padding-left: 100px;
+        padding: 20px 0px 50px 100px;
+        z-index: 30
 
     }
 
@@ -190,41 +206,37 @@
         padding: 0.5rem 0.5rem 0.5rem 0;
         width: 100%;
         display: table;
+        color: var(--primaryColor)
     }
 
     .newnav-item {
         line-height: 15px;
 
     }
-
-    .newnav-links:hover {
-        background: var(--backgroundColor);
-        color: var(--purpleColor);
+    .newnav-item:hover:after {
+        display: none;
     }
 
     .newnav-icon {
-        color: var(--purpleColor);
-        font-size: 25px;
+        color:#fff;
+        font-size: xx-large;
         cursor: pointer;
         font-family: var(--textFamily);
     }
 
     .newnav-cancel {
-        color: var(--primaryColor)
+        color: #fff;
     }
 
     .newdropdown {
-        margin-top: 60px;
+        /* margin-top: 60px;
+        right:0; */
     }
 
     .newdropdown li:hover {
         background: var(--purpleColor);
         color: #fff;
         width: 100%;
-    }
-
-    .height li {
-        display: none
     }
 
     .newnav-logo {
@@ -240,4 +252,20 @@
         height: 85px;
         text-align: left;
     }
+}
+@media screen and (max-width: 768px) {
+    .newnav-menu.active {
+        padding-left: 20px;
+        padding: 20px 0px 50px 40px;
+
+    }
+    
+}
+@media screen and (max-width: 560px) {
+    .newnav-menu.active {
+        padding-left: 20px;
+        padding: 20px 0px 50px 20px;
+
+    }
+    
 }

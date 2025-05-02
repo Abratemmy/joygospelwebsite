@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import "./Footer.css";
-import {FaInstagram} from 'react-icons/fa';
-import {RiLinkedinFill} from 'react-icons/ri';
+import { FaInstagram } from 'react-icons/fa';
+import { RiLinkedinFill } from 'react-icons/ri';
 // import logo from "../../images/logo.png"
 
 export class Footer extends Component {
@@ -18,7 +18,7 @@ export class Footer extends Component {
                                     <NavLink to="/" className="footer-logo-nav"><img src="{logo}" alt="JoyLogo" /></NavLink>
                                 </div> */}
                                 <div className="footer-about">
-                                    <p>Joy Agunbiade has a strong passion for people discovering their purpose and walking in it fully . . .</p>
+                                    <p>Joy Gospel has a strong passion for people discovering their purpose and walking in it fully . . .</p>
                                 </div>
                             </div>
                         </div>
@@ -39,13 +39,13 @@ export class Footer extends Component {
                             <div className="footer-container">
                                 <div className="footer-title">Contact-info</div>
                                 <div className="footer-text">
-                                    <span>Email: </span> <a href="mailto:joyagunbiadeweb@gmail.com" target="_blank"  rel="noopener noreferrer" className="footer-mail">joyagunbiadeweb@gmail.com</a>
+                                    <span>Email: </span> <a href="mailto:joyagunbiadeweb@gmail.com" target="_blank" rel="noopener noreferrer" className="footer-mail">joyagunbiadeweb@gmail.com</a>
                                 </div>
                                 <div className="footer-text">
                                     <ul className="footer-social">
                                         {/* <li><a href="/jaweb/blogs" className="footer-link"><FaFacebookF className="footer-navlink" /></NavLink></li> */}
-                                        <li><a href="https://ca.linkedin.com/in/joy-agunbiade-chrp-cdr-38740a123" target="_blank"  rel="noopener noreferrer" className="footer-link"><RiLinkedinFill className="footer-navlink" /></a></li>
-                                        <li><a href="https://www.instagram.com/joy_ajay/" className="footer-link" target="_blank"  rel="noopener noreferrer"><FaInstagram className="footer-navlink" /></a></li>
+                                        <li><a href="https://ca.linkedin.com/in/joy-agunbiade-chrp-cdr-38740a123" target="_blank" rel="noopener noreferrer" className="footer-link"><RiLinkedinFill className="footer-navlink" /></a></li>
+                                        <li><a href="https://www.instagram.com/joy_ajay/" className="footer-link" target="_blank" rel="noopener noreferrer"><FaInstagram className="footer-navlink" /></a></li>
 
                                     </ul>
                                 </div>
@@ -57,7 +57,7 @@ export class Footer extends Component {
 
                     <div className="footer-copyright text-center">
                         Copyright © JoyAgunbiade.com  <span> |
-                            <a href="https://abratemmy.github.io/myportfolio/" target="_blank"  rel="noopener noreferrer" className="footer-webmaster">Webmaster</a>
+                            <a href="temitopeolasode.netlify.app" target="_blank" rel="noopener noreferrer" className="footer-webmaster">Webmaster</a>
                         </span>
                     </div>
                 </div>

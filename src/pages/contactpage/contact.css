@@ -5,7 +5,7 @@
 .contactpage .contact-text{
     padding: 40px 0px;
     text-align: justify;
-    font-size: 17px;
+    font-size: 16px;
     color:var(--blackColor);
     font-family: var(--textFamily);
     line-height: 30px;
@@ -24,12 +24,8 @@
 .contactpage .contact-nav:hover{
     color: var(--primaryColor);
 }
-.contactpage .contact-title{
-    font-size: 30px;
-    font-family: var(--textFamily);
-    font-weight: bold;
-    color:var(--purpleColor);
-    text-transform: uppercase;
+.contactpage .pageTitle{
+    color:var(--primaryColor);
     padding-bottom: 30px;
 }
 .contact-details{
@@ -49,7 +45,7 @@
 }
 .contactpage .contact-form label{
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     color:var(--blackColor);
     font-weight:600
 }
@@ -70,7 +66,7 @@
     border: 1px solid var(--purpleColor);
     transition: 0.4s all ease;
     color:var(--blackColor);
-    font-size:18px;
+    font-size:16px;
     font-family: var(--textFamily);
 }
 .contactpage .inputfield:focus, .contactpage .textarea:focus{

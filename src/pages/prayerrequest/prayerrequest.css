@@ -8,7 +8,7 @@
 .prayer p{
     color: var(--blackColor);
     line-height: 30px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: var(--textFamily);
     text-align: justify;
 }
@@ -18,7 +18,7 @@
     padding: 20px;
     text-align: justify;
     line-height: 30px;
-    font-size:18px;
+    font-size:16px;
     font-family: var(--textFamily);
     color: var(--blackColor)
 }
@@ -42,7 +42,7 @@
 }
 .prayer-request-form label{
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     color:var(--blackColor);
     font-weight:600
 }
@@ -63,7 +63,7 @@
     border: 1px solid var(--purpleColor);
     transition: 0.4s all ease;
     color:var(--blackColor);
-    font-size:18px;
+    font-size:16px;
     font-family: var(--textFamily);
 }
 .prayer-request-form .inputfield:focus, .prayer-request-form .textarea:focus{

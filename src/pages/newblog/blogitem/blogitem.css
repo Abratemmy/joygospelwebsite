@@ -9,11 +9,14 @@
 .blogitem-background h1{
     color: #fff!important;
     padding-top: 20px;
+    font-weight: 600;
+    font-family: var(--headingFamily)!important;
 }
 .blogitem-background p{
-    color:#fff;
+    color:var(--primaryColor)!important;
     font-size: 20px;
-    font-family: var(--textFamily);
+    font-weight: 600;
+    font-family: var(--headingFamily)!important;
 }
 
 .blog-item-container{
@@ -38,15 +41,16 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--blackColor);
-    font-size:  30px;
+    font-size:  x-large;
     font-weight: 600;
     padding-top: 10px;
+    font-family: var(--headingFamily);
 }
 .each-blog-quote{
     font-size: 20px;
     position: relative;
     top: -10px;
-    color: var(--purpleColor);   
+    color: var(--primaryColor);   
 }
 .display-each-img{
     padding: 30px 0px;
@@ -61,7 +65,6 @@
     line-height: 30px;
     text-align: justify;
     color: var(--blackColor);
-    font-weight: 550
 }
 .blog-item-comments{
     padding-bottom: 40px;

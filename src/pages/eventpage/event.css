@@ -81,14 +81,14 @@ video {
 
 .upcoming-event {
     padding: 10px 0px 20px 0px;
-    background: var(--primaryColor);
+    background: var(--newBackground);
 
 }
 
 .event-header {
     padding-bottom: 30px;
-    font-size: 50px;
-    font-family: var(--cursiveFamily);
+    /* font-size: 50px; */
+    font-family: var(--headingFamily);
     color: var(--purpleColor);
     text-align: center;
     font-weight: 600

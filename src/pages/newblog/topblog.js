@@ -58,9 +58,9 @@ function Topblog() {
 
                   {/* <div className='topblog-podcast-title'>Check more:</div> */}
                   <div className='topblog-podcast'>
-                    <div className='wow slideInUp' data-wow-duration="2s" data-wow-delay=".1s">
+                    {/* <div className='wow slideInUp' data-wow-duration="2s" data-wow-delay=".1s">
                       <NavLink to='/podcasts' className="navlinks-btn">Podcast</NavLink>
-                    </div>
+                    </div> */}
 
                     <div className="" style={{ marginLeft: "10px" }}>
                       <a href='https://open.spotify.com/show/5o1MOtBi5EqZcmczN7RRt9' className="navlinks-btn schedule-btn topblog-btn">Spotify</a>

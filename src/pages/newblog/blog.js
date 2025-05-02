@@ -6,27 +6,27 @@ import Sidebar from './sidebar';
 import Topblog from './topblog';
 
 function Blog() {
-  return (
-    <div className='blogpage'>
-        <Pagesheader title="My Chronicles" />
+    return (
+        <div className='blogpage'>
+            <Pagesheader title="My Chronicles" />
 
-        <Topblog />
+            <Topblog />
 
-        <div className=''>
-            <div className='container'>
-                <div className='row'>
-                    <div className='col-lg-9 col-md-9 col-sm-12'>
-                        <Blogpost />
-                    </div>
+            <div className=''>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-lg-9 col-md-12 col-sm-12'>
+                            <Blogpost />
+                        </div>
 
-                    <div className='col-lg-3 col-md-3 col-sm-12'>
-                        <Sidebar />
+                        <div className='col-lg-3 col-md-12 col-sm-12'>
+                            <Sidebar />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Blog

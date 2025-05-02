@@ -3,14 +3,15 @@ import { BiSearch } from "react-icons/bi";
 import "./searchbar.css";
 import axios from 'axios';
 import { NavLink } from "react-router-dom";
+import blogData from '../../../components/data/BlogData';
 
 function Searchbar({ placeholder }) {
     const [searchblogs, setSearchBlogs] = useState([]);
 
     useEffect(() => {
         const fetchSearchBlogs = async () => {
-            const res = await axios.get('https://joyagunbiadeserver.onrender.com/blog');
-            setSearchBlogs(res.data);
+            const res = await (blogData);
+            setSearchBlogs(res);
         }
         fetchSearchBlogs()
     }, []);

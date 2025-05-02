@@ -16,34 +16,34 @@ h1 span {
 
 /* css for the homepage banner */
 .homepage-banner {
-    background: linear-gradient(to left, rgba(85, 84, 84, 0.459), rgba(0, 0, 0, 0.993)), url("../../images/jjoybg.jpg");
+    background: linear-gradient(to left, rgba(85, 84, 84, 0.664), rgb(0, 0, 0)), url("../../images/banner.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     position: relative;
 }
 
 .homepage-banner .title {
     position: relative;
-    padding-top: 12%;
-    font-size: 60px;
+    padding-top: 8%;
+    font-size: 40px;
     color: #fff;
-    font-weight: bold;
+    font-weight: 600;
     max-width: 650px;
-    line-height: 65px;
-    font-family: var(--textFamily);
+    font-family: var(--headingFamily);
     padding-bottom: 20px;
+}
+.homepage-banner .title span{
+    color: var(--purpleColor);
 }
 
 .homepage-banner p {
     color: #fff;
     font-family: var(--textFamily);
-    padding-top: 30px;
-    max-width: 650px;
-    font-size: 20px;
-    letter-spacing: .7px
+    padding: 30px 0px 30px;
+    max-width: 630px;
 }
 
 .home-button {
@@ -78,15 +78,22 @@ h1 span {
 /* homeabout in homepage starts here */
 .home-about {
     padding: 40px 0px;
+    width: 100%;
+    margin: auto;
+    position: relative;
 }
-
+.home-aboutContent{
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
 .home-about-image {
-    padding: 30px 0px;
+    width: 100%;
 }
 
 .home-about-image img {
     border-radius: 5px;
-    width: 100%;
+    width: 95%;
     opacity: 1;
     transition: 0.4s all ease;
     /* object-fit: cover */
@@ -98,34 +105,27 @@ h1 span {
 }
 
 .home-about-text {
-    margin: 30px 0px;
-    padding: 30px 15px;
-    background: var(--backgroundColor);
+    background:#c9a66b31;
     border-radius: 10px;
+    padding: 25px 20px;
 }
 
-.home-about-text h1 {
-    font-family: var(--textFamily);
-    font-size: 45px;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.home-about-text p {
+.home-about-text .text {
     color: var(--blackColor);
     font-family: var(--textFamily);
-    font-size: 17px;
-    line-height: 30px;
+    font-size: 16px;
+    /* line-height: 30px; */
     text-align: justify;
-
+    padding-bottom: 20px;
 }
 
 .home-about-text span {
     display: block;
-    color: var(--purpleColor);
+    color: var(--primaryColor);
     font-family: var(--cursiveFamily);
     font-size: 35px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .button {
@@ -153,19 +153,13 @@ h1 span {
 
 /* homeschedule css starts here */
 .home-schedule {
-    background-color: var(--primaryColor);
+    background: var(--newBackground);
     text-align: center;
+    padding: 50px 0px;
 }
-
-.home-schedule-col {
-    padding: 30px 0px
+.home-schedule .pageTitle{
+    color: #fff;
 }
-
-.home-schedule h1 {
-    font-size: 50px;
-    padding: 10px 0px 30px 0px;
-}
-
 .schedule-btn,
 .schedule-btn1 {
     background: var(--purpleColor);
@@ -180,6 +174,16 @@ h1 span {
 
 .schedule-btn1:hover {
     color: var(--primaryColor)
+}
+.home-schedule .pageSubtitle{
+    color: #fff
+}
+.home-schedule .mail{
+    color: #fff;
+    transition: 0.4s all ease;
+}
+.home-schedule .mail:hover{
+    color: var(--purpleColor)
 }
 
 /* css for home-card */
@@ -284,14 +288,14 @@ h1 span {
 
 .icon-light {
     color: var(--purpleColor) !important;
-    font-size: 22px
+    font-size: 30px
 }
 
 .jesustext {
-    color: var(--blackColor);
+    color: #fff;
     font-size: 20px;
-    font-family: var(--textFamily);
-    font-weight: 550;
+    font-family: var(--headingFamily);
+    font-weight: 600;
 }
 
 /* css for home blog starts here */
@@ -304,7 +308,7 @@ h1 span {
 }
 
 .home-blog {
-    padding: 50px 0px 30px 0px;
+    padding: 50px 0px 60px 0px;
     width: 100%;
 }
 
@@ -320,6 +324,36 @@ h1 span {
     background: #fff;
     padding: 25px;
     transition: 0.4s all ease;
+    height: fit-content;
+    transition: all 0.6s linear;
+    position: relative;
+}
+
+.home-blog-card .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    top: 0px;
+    left: 0;
+    transform: rotateY(95deg);
+    transition: all 0.6s linear;
+    background: linear-gradient(to right, rgba(17, 75, 20, 0.521), rgb(0, 0, 0)),rgba(255, 255, 255, 0);
+    z-index: -1;
+    opacity: 0;
+}
+.home-blog-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 25px -15px var(--purpleColor);
+    transition: all 0.4s linear;
+    z-index: 1;
+    color:#fff!important;
+}
+.home-blog-card:hover .overlay{
+    transform: rotateY(0deg);
+    opacity: 1;
+    transition: all 0.4s linear;
+    z-index: -1;
 }
 
 .home-blog-img {
@@ -351,14 +385,14 @@ h1 span {
     /* object-fit: contain; */
 }
 
-.home-blog-card:hover img {
+/* .home-blog-card:hover img {
     transform: scale(1.03);
 }
 
 .home-blog-card img:hover {
     opacity: 0.5;
     image-orientation: flip;
-}
+} */
 
 .home-blog-content {
     display: flex;
@@ -381,6 +415,15 @@ h1 span {
     color: var(--blackColor);
     font-size: 15px;
     font-family: var(--textFamily);
+    --max-lines: 3;    
+    overflow: hidden;
+    display: -webkit-box;    
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+.home-blog-card:hover .title,
+.home-blog-card:hover .blog-text {
+    color: #fff!important;
 }
 
 .blog-button {
@@ -390,19 +433,11 @@ h1 span {
 
 @media screen and (max-width: 850px) {
     .homepage-banner {
-        background: linear-gradient(to left, rgba(85, 84, 84, 0.459), rgba(0, 0, 0, 0.993)), url("../../images/jjoybg.jpg");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        width: 100%;
-        height: 100%;
         position: relative;
         overflow: hidden;
     }
 
     .homepage-banner .title {
-        font-size: 40px;
-        line-height: 45px;
         padding-top: 8%;
     }
 
@@ -431,7 +466,8 @@ h1 span {
     }
 
     .home-about-image img {
-        height: 300px;
+        object-fit: contain;
+        margin-bottom: 20px;
     }
 
     .home-card-title {
@@ -480,4 +516,255 @@ h1 span {
         font-family: var(--textFamily);
         font-weight: 550;
     }
+}
+
+@media screen and (max-width: 769px) {
+    .homepage-banner {
+        padding-top: 5%;
+        height: 90vh;
+    }
+    .homepage-banner .title {
+        font-size: xx-large;
+        padding-top: 8%;
+    }
+
+    .homepage-banner p {
+        font-size: 17px;
+        padding: 30px 0px 25px 0px;
+        max-width: 100%;
+        line-height: 30px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .homepage-banner {
+        padding-top: 10%;
+        height: 90%;
+        
+    }
+    .homepage-banner .title {
+        max-width: 100%;
+        font-size: x-large;
+        line-height: 35px;
+    }
+
+    .homepage-banner p {
+        max-width: 100%;
+        padding: 20px 0px 20px;
+        line-height: 26px;
+    }
+}
+
+
+/*new session 1 here  */
+.home-Newsession1{
+    padding: 50px 0px;
+    width: 100%;
+    position: relative; 
+}
+.home-Newsession1-col{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+@media screen and (max-width: 991px){
+    .home-Newsession1-col{
+        width: 100%;
+    }
+    
+}
+.home-Newsession1-col .NewSession1Card{
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid rgb(179, 177, 177);
+    height: 150px;
+    position: relative;
+    background: #c9a66b31;
+}
+@media screen and (min-width:992px) and (max-width: 1170px){
+    .home-Newsession1-col .NewSession1Card{
+        height: fit-content;
+        min-height: 180px
+    }
+    
+}
+@media screen and (min-width:768px) and (max-width: 991px){
+    .home-Newsession1-col .NewSession1Card{
+        height: fit-content;
+        min-height: 210px
+    }
+    .home-aboutContent{
+        width: 96%;
+        margin: auto;
+        position: relative;
+    }
+    
+}
+.home-Newsession1-col .NewSession1Card::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    top: 0;
+    left: 0;
+    transform: rotateY(95deg);
+    transition: all 0.6s linear;
+    background: linear-gradient(to right, rgba(17, 75, 20, 0.521), rgb(0, 0, 0)),rgba(255, 255, 255, 0);
+    z-index: -1;
+    opacity: 0;
+}
+.home-Newsession1-col .NewSession1Card:hover::after{
+    transform: rotateY(0deg);
+    opacity: 1;
+    transition: all 0.4s linear;
+    z-index: -1;
+    color: #fff!important
+}
+.home-Newsession1-col .NewSession1Card .title{
+    font-size: 20px;
+    font-family: var(--headingFamily);
+    color: var(--primaryColor);
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.home-Newsession1-col .NewSession1Card:hover .title,
+.home-Newsession1-col .NewSession1Card:hover .pageText{
+    color: #fff!important;
+}
+
+@media screen and (max-width: 576px) {
+    .home-aboutContent{
+        width: 95%;
+    }
+}
+
+/* another session starts here */
+.newBanner1{
+    background: var(--newBackground);
+    margin: 20px 0px 40px 0px;
+    padding: 50px 0px;
+}
+.newBanner1 .content{
+    width: 80%;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.newBanner1 .content .pageTitle{
+    text-align: center;
+    color: #fff;
+}
+.newBanner1 .content .pageTitle span{
+    color: var(--purpleColor)
+}
+.newBanner1 .content .pageText{
+    text-align: center;
+    color: #fff;
+}
+.newBanner1 .content .pageSubtitle{
+    color: #fff;
+    padding: 20px 0px;
+}
+.newBanner1 .content .social{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.newBanner1 .content .footer-navlink{
+    background: var(--purpleColor);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    padding: 8px;
+    color: var(--primaryColor);
+    font-size: 14px!important;
+    transition: 0.4s all ease;
+}
+.newBanner1 .content .footer-navlink:hover{
+    background: #fff;
+}
+@media screen and (max-width:768px) {
+    .newBanner1 .content{
+        width: 95%;
+    }
+}
+
+/* another section here */
+.homeMeet{
+    position: relative;
+    width: 100%;
+    padding: 40px 0px;;
+}
+.homeMeet .content{
+    padding-right: 10px;
+}
+.homeMeet .content .pageText{
+    padding-bottom: 20px;
+    text-align: justify;
+}
+.homeMeet .cc{
+    font-family:var(--cursiveFamily);
+    font-size: x-large;
+    color: var(--primaryColor);
+}
+.homeMeet .image img{
+    width: 100%;
+}
+
+/* another new session here */
+.WhatyouGet{
+    position: relative;
+    width: 100%;
+    padding: 50px 0px;
+}
+.WhatyouGet .content{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+@media screen and (max-width: 850px){
+    .WhatyouGet .content{
+        width: 95%;
+    }
+    
+}
+.WhatyouGet .content .wrapperContent{
+    background: #c9a66b31;
+    padding: 20px;
+    margin:8px 0px;
+    border-radius: 10px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+@media screen and (max-width: 560px){
+    .WhatyouGet .content .wrapperContent{
+        width: 95%;
+    }
+    
+}
+.WhatyouGet .content .wrapperContent .icon1{
+    color: #fff;
+    font-size: 30px;
+    background: var(--newBackground);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.WhatyouGet .content .wrapperContent .text{
+    font-family: var(--headingFamily);
+    color: var(--blackColor);
+    font-weight: 600;
 }
